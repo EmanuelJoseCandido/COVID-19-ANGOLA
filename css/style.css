@@ -1,0 +1,123 @@
+*{
+    font-family: Montserrat, sans-serif; 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #24252A;
+}
+
+li, a, button{
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10%;
+    background-color: #181817;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.31);  
+}
+
+
+header div.logo{
+    font-weight: bolder;
+    font-size: 18pt;
+    text-transform: uppercase;
+    color: #edf0f1;
+    cursor: pointer;
+}
+
+header span.black, header span.yellow, header span.red{
+    transition: all 650ms ease-in-out;
+}
+
+header .covid span.black{
+    color: #080807;
+}
+
+header .barra span.yellow{
+    color: #F1C40F;
+}
+
+
+header span.angola{
+    color: #E84C3D;
+}
+
+header div.logo:hover span.black{
+    color: #080807;
+}
+
+header div.logo:hover span.yellow{
+    color: #F1C40F;
+}
+
+header div.logo:hover span.red{
+    color: #E84C3D;
+}
+
+header .nav-links li a{
+    text-decoration: none;
+}
+
+header .nav-links li{
+    display: inline-block;
+    padding:  18px 20px;
+}
+
+header .nav-links li a{
+    transition: all 0.5s ease-in-out;
+}
+
+header .nav-links li a:hover{
+    color: #F1C40F;
+}
+
+header button{
+    padding: 9px 25px;
+    background-color: rgb(241, 196, 15);
+    color: #080807;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3 ease 0s;
+}
+
+header button:hover{
+    background-color: rgba(241, 196, 15, 0.8);
+}
+
+header .sub-menu{
+    position: absolute;
+    margin-top: 18px;
+    display: none;
+    flex-direction: column;
+    background: #181817;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+    transition: all .3s ease-in-out;
+
+}
+
+header .sub-menu li{
+    transition: all .3s ease-in-out;
+    border-top: 1px solid #edf0f1;
+    padding: 1rem 2rem;
+}
+
+header ul li a:not(:only-child)::after {
+    padding-left: 2px;
+    content: ' ▾';
+}
+
+header ul li:hover ul{
+    display: flex;
+}
+
+
+

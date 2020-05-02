@@ -16,6 +16,34 @@
 	</head>
 	<body>
 		<header>
+			<div class="logo">
+				<span class="covid">
+					<span class="black">
+						<span class="black">CO</span><span class="yellow">VI</span><span class="red">D-19</span>
+					</span> 
+				</span> 
+				<span class="barra">
+					<span class="yellow">|</span>
+				</span>
+				<span class="angola">
+					<span class="black">AN</span><span class="yellow">GO</span><span class="red">LA</span>
+				</span>
+			</div>
+			<nav>
+				<ul class="nav-links">
+					<li><a href="#inicio">Inicio</a></li>
+					<li><a href="#combate">Combate</a></li>
+					<li><a href="#medidas">Medidas</a></li>
+					<li><a href="#sobre">Sobre</a>
+						<ul class="sub-menu">
+							<li><a href="#covid-19">Covid-19</a></li>
+							<li><a href="#web-site">Web-Site</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+
+			<a class="cta" href="#"><button>Contacto</button></a>
 		</header>
 		<main>
 			<section>
