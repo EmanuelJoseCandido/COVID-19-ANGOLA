@@ -21,11 +21,15 @@
 		<link rel="stylesheet" href="css/style.css"> 
 		<!-- Stylesheet this page -->
 
+		<!-- Stylesheet this page -->
+		<link rel="stylesheet" href="../App_Yetu/vendor/fontawesome-free-5.11.2-web/css/all.css"> 
+		<!-- Stylesheet this page -->
+
 		<title>COVID-19 EM ANGOLA</title>
 	</head>
 	<body>
 
-	
+
 	<!-- Header -->
 		<header>
 			<div class="logo">
@@ -44,7 +48,7 @@
 			<nav>
 				<ul class="nav-links">
 					<li><a href="#inicio">Inicio</a></li>
-					<li><a href="#combate">Combate</a></li>
+					<li><a href="#combat">Combate</a></li>
 					<li><a href="#medidas">Medidas</a></li>
 					<li><a href="#about">Sobre</a>
 						<ul class="sub-menu">
@@ -95,7 +99,7 @@
 
 
 		<!-- Combate -->
-		<section id="combate">
+		<section id="combat">
 			<!-- In construction  -->
 		</section>
 		<!-- Combate -->
@@ -118,7 +122,67 @@
 
 			<article id="team">
 				<!-- In construction  -->
+				<h1>Equipe</h1>
 
+				<!-- Name: Emanuel Cândido -->
+				<div class="team-content">
+					<div class="pic">
+						<img src="galeira/imagens/Emanuel.jpg" alt="">
+					</div>
+					
+					<div class="description">
+						<h3 class="name">Emanuel Cândido</h3>
+						<span class="occupation">Web Developer</span>
+					</div>
+
+					<ul class="social">
+						<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+				<!-- Name: Emanuel Cândido -->
+
+				<!-- Name: Emanuel Cândido -->
+				<div class="team-content">
+					<div class="pic">
+						<img src="galeira/imagens/Emanuel.jpg" alt="">
+					</div>
+					
+					<div class="description">
+						<h3 class="name">Emanuel Cândido</h3>
+						<span class="occupation">Web Developer</span>
+					</div>
+
+					<ul class="social">
+						<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+				<!-- Name: Emanuel Cândido -->
+
+				<!-- Name: Emanuel Cândido -->
+				<div class="team-content">
+					<div class="pic">
+						<img src="galeira/imagens/Emanuel.jpg" alt="">
+					</div>
+					
+					<div class="description">
+						<h3 class="name">Emanuel Cândido</h3>
+						<span class="occupation">Web Developer</span>
+					</div>
+
+					<ul class="social">
+						<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+				<!-- Name: Emanuel Cândido -->
 			</article>
 
 

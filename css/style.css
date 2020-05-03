@@ -30,7 +30,7 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0px 10%;
-    background-color: #181817;
+    background-color: #24252A;
     box-shadow: 1px 2px 5px rgba(0,0,0,.31);  
 }
 
@@ -189,18 +189,94 @@ header ul li:hover ul{
 
 /* About */
 
+#team h1, #about h1{
+   /*  color: #707070; */
+   color: #E84C3D;
+    font-size: 10rem;
+    opacity: .2;
+    position: absolute;
+    margin-top: -120px;
+    margin-left: -700px;
+}
 
+#about{
+    background: #181817;   
+}
     /* Covid-19 */
 
     /* Covid-19 */
 
 
     /* Team */
+    #team{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: center;
+        padding: 120px;
+    }
 
+    #team .team-content{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin: 20px;
+        background: #111110;
+        color: #F1C40F;
+        border-radius: 8px/7px;
+        box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+        padding: 0px;
+        transition: all 650ms ease-in-out;
+    }
+
+    #team .team-content .pic img{
+        height: 250px;
+        width: 250px;
+        border-radius: 8px 8px 0px 0px;
+    } 
+
+    .team-content .description{
+        margin-top: 25px;
+    }
+
+    .team-content .social{
+        width: 100%;
+        margin-top: 25px;
+        bottom: -100px;
+        background: #E84C3D;
+        border-radius: 0px 0px 8px 8px;
+        transition: all 650ms ease-in-out;
+    }
+
+    #team .team-content:hover .social{
+        bottom: 0;
+    }
+
+    .team-content .social li{
+        display: inline-block;
+    }
+
+    .team-content .social li a{
+        color: #111110;
+        display: block;
+        padding: 10px;
+        font-size: 20px;
+        transition: all 650ms ease-in-out;
+    }
+
+    .team-content .social li a:hover{
+        background: #111110;
+        color: #F1C40F;
+
+    }
     /* Team */
 
 
     /* Web-site */
+    
 
     /* Web-site */
 
