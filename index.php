@@ -5,6 +5,7 @@
 	WebSite: COVID-19 em Angola.
 	WebSite escolhido para fazer a recolha de dados: https://www.worldometers.info/coronavirus/
 -->
+<?php include_once("php/funcoes.php");  ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
@@ -19,14 +20,14 @@
 			<div class="logo">
 				<span class="covid">
 					<span class="black">
-						<span class="black">CO</span><span class="yellow">VI</span><span class="red">D-19</span>
+						<span class="black">Co</span><span class="yellow">vi</span><span class="red">d-19</span>
 					</span> 
 				</span> 
 				<span class="barra">
 					<span class="yellow">|</span>
 				</span>
 				<span class="angola">
-					<span class="black">AN</span><span class="yellow">GO</span><span class="red">LA</span>
+					<span class="black">An</span><span class="yellow">go</span><span class="red">la</span>
 				</span>
 			</div>
 			<nav>
@@ -45,6 +46,36 @@
 
 			<a class="cta" href="#"><button>Contacto</button></a>
 		</header>
+
+		<section class="hero">
+			<div class="text">
+				<div class="titles">
+					<h1>Painel do Covid-19 em tempo real</h1>
+				</div>
+
+				<div class="data">
+					<div class="cases">
+						<p class="info-label">Casos</p>
+						<p class="info-number cases"><?php echo $casosConfirmados; ?></p>
+					</div>
+
+					<div class="recovered">
+						<p class="info-label">Recuperados</p>
+						<p class="info-number recovered"><?php echo $recuperados; ?></p>
+					</div>
+
+					<div class="deaths">
+						<p class="info-label">Mortes</p>
+						<p class="info-number deaths"><?php echo $mortes; ?></p>
+					</div>					
+				</div>
+			</div>
+
+			<div class="active">
+				<p class="info-label">Casos ativos</p>
+				<p class="info-number recovered"><?php echo $casosAtivos; ?></p>	
+			</div>
+		</section>
 		<main>
 			<section>
 				<article>
