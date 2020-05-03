@@ -5,17 +5,28 @@
 	WebSite: COVID-19 em Angola.
 	WebSite escolhido para fazer a recolha de dados: https://www.worldometers.info/coronavirus/
 -->
-<?php include_once("php/funcoes.php");  ?>
+
+<!-- Include the page "scraping.php" -->
+<?php include_once("php/scraping.php");?>
+<!-- Include the page "scraping.php" -->
+
 <!DOCTYPE html>
 <html lang="pt-br">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<link rel="stylesheet" href="css/style.css">
+
+		<!-- Stylesheet this page -->
+		<link rel="stylesheet" href="css/style.css"> 
+		<!-- Stylesheet this page -->
+
 		<title>COVID-19 EM ANGOLA</title>
 	</head>
 	<body>
+
+	
+	<!-- Header -->
 		<header>
 			<div class="logo">
 				<span class="covid">
@@ -35,18 +46,22 @@
 					<li><a href="#inicio">Inicio</a></li>
 					<li><a href="#combate">Combate</a></li>
 					<li><a href="#medidas">Medidas</a></li>
-					<li><a href="#sobre">Sobre</a>
+					<li><a href="#about">Sobre</a>
 						<ul class="sub-menu">
 							<li><a href="#covid-19">Covid-19</a></li>
+							<li><a href="#team">Equipe</a></li>
 							<li><a href="#web-site">Web-Site</a></li>
 						</ul>
 					</li>
 				</ul>
 			</nav>
 
-			<a class="cta" href="#"><button>Contacto</button></a>
+			<a class="contact" href="#contact"><button>Contacto</button></a>
 		</header>
+		<!-- Header -->
 
+
+		<!-- Hero -->
 		<section class="hero">
 			<div class="text">
 				<div class="titles">
@@ -76,19 +91,52 @@
 				<p class="info-number recovered"><?php echo $casosAtivos; ?></p>	
 			</div>
 		</section>
-		<main>
-			<section>
-				<article>
-				</article>
-			</section>
-			<aside>
-				<article>
-				</article>
-			</aside>
-		</main>
+		<!-- Hero -->
+
+
+		<!-- Combate -->
+		<section id="combate">
+			<!-- In construction  -->
+		</section>
+		<!-- Combate -->
+		
+
+		<!-- Medidas -->
+		<section id="medidas">
+			<!-- In construction  -->
+		</section>
+		<!-- Medidas -->
+
+
+		<!-- About -->
+		<section id="about">
+			<article id="covid-19">
+				<!-- In construction  -->
+
+			</article>
+
+
+			<article id="team">
+				<!-- In construction  -->
+
+			</article>
+
+
+			<article id="web-site">
+				<!-- In construction  -->
+
+			</article>
+		</section>
+		<!-- About -->
 	</body>
+
+	<!-- Footer -->
 	 <footer>
 		<p>Todos os direitos reservados <br> Copyright &copy; 2020 - by <a href="http://facebook.com/EmanuelCandido">Emanuel Cândido</a></p>
 	</footer>
+	<!-- Footer -->
+
+	<!-- Javascript this page -->
 	<script type="text/javascript" src="js/main.js"></script>
+	<!-- Javascript this page -->
 </html>

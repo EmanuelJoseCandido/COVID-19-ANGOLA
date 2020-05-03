@@ -1,3 +1,11 @@
+/* 
+    -----[Stylesheet]-----
+    Autor: Emanuel Cândido 
+	Email: emanueljosecandido@hotmail.com
+	GitHub: https://github.com/EmanuelJoseCandido
+	WebSite: COVID-19 em Angola.
+*/
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -122,8 +130,8 @@ header ul li:hover ul{
 }
 /* Header */
 
-/* Hero */
 
+/* Hero */
 .hero{
     width: 100%;
     height: 100vh;
@@ -166,8 +174,43 @@ header ul li:hover ul{
 .hero .data p{
     font-size: 30pt;
 }
-
 /* Hero */
+
+
+/* Combate */
+
+/* Combate */
+
+
+/* Medidas */
+
+/* Medidas */
+
+
+/* About */
+
+
+    /* Covid-19 */
+
+    /* Covid-19 */
+
+
+    /* Team */
+
+    /* Team */
+
+
+    /* Web-site */
+
+    /* Web-site */
+
+
+/* About */
+
+
+/* Footer */
+
+/* Footer */
 
 
 
