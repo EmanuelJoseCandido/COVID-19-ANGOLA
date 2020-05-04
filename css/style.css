@@ -177,9 +177,12 @@ header ul li:hover ul{
 /* Hero */
 
 
-/* Combate */
+/* Numbers */
+#numbers{
+    background: #181817;
+}
 
-/* Combate */
+/* Numbers */
 
 
 /* Medidas */
@@ -188,10 +191,12 @@ header ul li:hover ul{
 
 
 /* About */
+#about{
+    background: #181817;   
+}
 
-#team h1, #about h1{
-   /*  color: #707070; */
-   color: #E84C3D;
+#covid-19 h1, #team h1, #website h1,#about h1, #numbers h1{
+    color: #E84C3D;
     font-size: 10rem;
     opacity: .2;
     position: absolute;
@@ -199,23 +204,147 @@ header ul li:hover ul{
     margin-left: -700px;
 }
 
-#about{
-    background: #181817;   
+#numbers, #team, #website, #covid-19{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: center;
+    padding: 120px;
 }
+
     /* Covid-19 */
+
+    #covid-19 .about-covid-19{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+        height: 450px;
+        width: 90%;
+        background: #181817;
+        border-radius: 8px/7px;
+        box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+        transition: all 650ms ease-in-out;
+    }
+
+    #covid-19 .about-covid-19 .item-covid-19{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin: 30px;
+        height: 150px;
+        width: 200px;
+        background: #080807;
+        border-radius: 8px/7px;
+        box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+        cursor: pointer;
+        transition: all 650ms ease-in-out;
+    }
+
+    #covid-19 .about-covid-19 .item-covid-19:hover h2{
+        color: #F1C40F;
+        opacity: 1;
+    }
+
+    #covid-19 .about-covid-19 .item-covid-19 h2{
+        color: #F1C40F;
+        opacity: .7;
+        transition: all 650ms ease-in-out;
+    }
+
+    /* Modal */
+    .modal-covid-19{
+        display: none;
+        background: rgba(0, 0, 0, .8);
+        position: fixed; /* Stay in place */
+        z-index: 1000; /* Sit on top */
+        padding-top: 50px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */   
+    }
+
+    .description-covid-19{
+        position: relative;
+        background-color: #fefefe;
+        margin: auto;
+        padding: 50px;
+        width: 50%;
+        margin-bottom: 50px;
+        border-radius: 8px/7px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+        -webkit-animation-name: animatetop;
+        -webkit-animation-duration: 0.4s;
+        animation-name: animatetop;
+        animation-duration: 0.4s
+    }
+
+    .description-covid-19 h4, .description-covid-19 h3{
+        text-align: left;
+        margin: 10px;
+    }
+
+    .description-covid-19 h4{
+        margin-top: 50px;
+    }
+
+    .description-covid-19 p{
+        text-align: justify;
+        text-indent: 50px;
+        margin: 10px;
+    }
+
+    .description-covid-19 li{
+        color: #080807;
+        text-align: left;
+        margin-left: 30px;
+        text-align: justify;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    /* Add Animation */
+    @-webkit-keyframes animatetop {
+        from {top:-300px; opacity:0} 
+        to {top:0; opacity:1}
+    }
+    
+    @keyframes animatetop {
+        from {top:-300px; opacity:0}
+        to {top:0; opacity:1}
+    }
+
+    /* The Close Button */
+    .close {
+        position: relative;
+        z-index: 1500;
+        color: #080807;
+        float: right;
+        margin-right: 350px;
+        font-size: 50px;
+        font-weight: bold;
+        transition: all 650ms ease-in-out;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: #E84C3D;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    /* Modal */
 
     /* Covid-19 */
 
 
     /* Team */
-    #team{
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        align-items: baseline;
-        justify-content: center;
-        padding: 120px;
-    }
 
     #team .team-content{
         position: relative;
@@ -275,10 +404,12 @@ header ul li:hover ul{
     /* Team */
 
 
-    /* Web-site */
-    
+    /* Website */
+    #website, #covid-19{
+        background: #24252A;
+    }
 
-    /* Web-site */
+    /* Website */
 
 
 /* About */
