@@ -17,6 +17,10 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+		<!-- Shortcut icon -->
+		<link rel="shortcut icon" href="galeira/imagens/icons8_Angola.ico" type="image/x-icon">
+		<!-- shortcut icon -->
+
 		<!-- Stylesheet this page -->
 		<link rel="stylesheet" href="css/style.css"> 
 		<!-- Stylesheet this page -->
