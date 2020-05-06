@@ -1,7 +1,9 @@
 <?php
+/*  */
+/*  */
 
-$actualizacao = 0;
-$casosConfirmados = 35;
-$mortes = 2;
-$recuperados = 11;
-$casosAtivos = $casosConfirmados - $mortes - $recuperados;
+$actualizacaoAngola = 0;
+$casosConfirmadosAngola = 35;
+$mortesAngola = 2;
+$recuperadosAngola = 11;
+$casosAtivosAngola = 4;

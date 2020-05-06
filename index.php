@@ -7,7 +7,7 @@
 -->
 
 <!-- Include the page "scraping.php" -->
-<?php include_once("php/scraping.php");?>
+<?php include_once("php/scraping.php"); $casosAtivosAngola = 0?>
 <!-- Include the page "scraping.php" -->
 
 <!DOCTYPE html>
@@ -80,24 +80,24 @@
 				<div class="data">
 					<div class="cases">
 						<p class="info-label">Casos</p>
-						<p class="info-number cases"><?php echo $casosConfirmados; ?></p>
+						<p class="info-number cases"><?php echo $casosConfirmadosAngola; ?></p>
 					</div>
 
 					<div class="recovered">
 						<p class="info-label">Recuperados</p>
-						<p class="info-number recovered"><?php echo $recuperados; ?></p>
+						<p class="info-number recovered"><?php echo $recuperadosAngola; ?></p>
 					</div>
 
 					<div class="deaths">
 						<p class="info-label">Mortes</p>
-						<p class="info-number deaths"><?php echo $mortes; ?></p>
+						<p class="info-number deaths"><?php echo $mortesAngola; ?></p>
 					</div>					
 				</div>
 			</div>
 
 			<div class="active">
 				<p class="info-label">Casos ativos</p>
-				<p class="info-number recovered"><?php echo $casosAtivos; ?></p>	
+				<p class="info-number recovered"><?php echo $casosAtivosAngola; ?></p>	
 			</div>
 		</section>
 		<!-- Hero -->
@@ -107,6 +107,93 @@
 		<section id="numbers">
 			<!-- In construction  -->
 			<h1>Números</h1>
+			
+		<div class="info">
+			<div class="info-covid">
+				<h2>Estado do Covid-19 em Angola</h2>
+				<div class="numbers-covid">
+					<div class="cases">
+						<p class="info-label">Casos</p>
+						<p class="info-number cases"><?php echo $casosConfirmadosAngola; ?></p>
+					</div>
+
+					<div class="active">
+						<p class="info-label">Casos ativos</p>
+						<p class="info-number recovered"><?php echo $casosAtivosAngola; ?></p>	
+					</div>
+
+					<div class="recovered">
+						<p class="info-label">Recuperados</p>
+						<p class="info-number recovered"><?php echo $recuperadosAngola; ?></p>
+					</div>
+
+					<div class="deaths">
+						<p class="info-label">Mortes</p>
+						<p class="info-number deaths"><?php echo $mortesAngola; ?></p>
+					</div>
+				</div>
+			</div>
+			<div class="tables">
+				<table class="table table-CPLP">
+					<caption>Quadro dos membros da CPLP</caption>
+					<thead>
+						<tr>
+							<th class="">Países</th>
+							<th class="">Casos</th>
+							<th class="">Mortes</th>
+							<th class="">Recup.</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="two-objects"><img src="galeira/imagens/22px-Flag_of_Angola.webp" alt=""><span>Angola</span></td>
+							<td><?php echo $casosConfirmadosAngola; ?></td>
+							<td><?php echo $mortesAngola; ?></td>
+							<td><?php echo $recuperadosAngola; ?></td>
+						</tr>
+						
+					</tbody>
+				</table>
+
+				<table class="table table-CPLP">
+					<caption>Quadro dos membros da CPLP</caption>
+					<thead>
+						<tr>
+							<th class="">Países</th>
+							<th class="">Casos</th>
+							<th class="">Mortes</th>
+							<th class="">Recup.</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="two-objects"><img src="galeira/imagens/22px-Flag_of_Angola.webp" alt=""><span>Angola</span></td>
+							<td>35</td>
+							<td>2</td>
+							<td>11</td>
+						</tr>
+						<tr>
+							<td class="two-objects"><img src="galeira/imagens/22px-Flag_of_Angola.webp" alt=""><span>Angola</span></td>
+							<td>35</td>
+							<td>2</td>
+							<td>11</td>
+						</tr>
+
+						<tr>
+							<td class="two-objects"><img src="galeira/imagens/22px-Flag_of_Angola.webp" alt=""><span>Angola</span></td>
+							<td>35</td>
+							<td>2</td>
+							<td>11</td>
+						</tr>
+					</tbody>
+				</table>
+
+				
+			</div>
+		</div>
+
+			
+
 		</section>
 		<!-- Numbers -->
 		
@@ -126,6 +213,7 @@
 
 				<div class="about-covid-19">
 					<div class="item-covid-19">
+						<i class="fab fa-facebook"></i>
 						<h2>O que é Covid-19?</h2>
 						<div class="modal-covid-19">
 							<span class="close">&times;</span>
@@ -155,6 +243,7 @@
 					</div>
 
 					<div class="item-covid-19">
+						<i class="fab fa-facebook"></i>
 						<h2>Quais são os sintomas?</h2>
 						<div class="modal-covid-19">
 							<span class="close">&times;</span>
@@ -178,6 +267,7 @@
 					</div>
 
 					<div class="item-covid-19">
+						<i class="fab fa-facebook"></i>
 						<h2>Como é transmitido?</h2>
 						<div class="modal-covid-19">
 							<span class="close">&times;</span>
@@ -202,6 +292,7 @@
 					</div>
 
 					<div class="item-covid-19">
+						<i class="fab fa-facebook"></i>
 						<h2>Diagnóstico?</h2>
 						<div class="modal-covid-19">
 							<span class="close">&times;</span>
@@ -242,6 +333,7 @@
 					</div>
 
 					<div class="item-covid-19">
+						<i class="fab fa-facebook"></i>
 						<h2>Como se proteger?</h2>
 						<div class="modal-covid-19">
 							<span class="close">&times;</span>
@@ -299,6 +391,7 @@
 					</div>
 
 					<div class="item-covid-19">
+						<i class="fab fa-facebook"></i>
 						<h2>Se eu ficar doente?</h2>
 						<div class="modal-covid-19">
 							<span class="close">&times;</span>
@@ -338,7 +431,7 @@
 				<!-- In construction  -->
 				<h1>Equipe</h1>
 
-				<!-- Name: Emanuel Cândido -->
+				<!-- Name: João Sessa -->
 				<div class="team-content">
 					<div class="pic">
 						<img src="galeira/imagens/Sessa.jpg" alt="">
@@ -352,11 +445,11 @@
 					<ul class="social">
 						<li><a href="#"><i class="fab fa-facebook"></i></a></li>
 						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fab fa-github"></i></a></li>
 						<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
 					</ul>
 				</div>
-				<!-- Name: Emanuel Cândido -->
+				<!-- Name: João Sessa -->
 
 				<!-- Name: Emanuel Cândido -->
 				<div class="team-content">
@@ -372,13 +465,13 @@
 					<ul class="social">
 						<li><a href="#"><i class="fab fa-facebook"></i></a></li>
 						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fab fa-github"></i></a></li>
 						<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
 					</ul>
 				</div>
 				<!-- Name: Emanuel Cândido -->
 
-				<!-- Name: Emanuel Cândido -->
+				<!-- Name: Funete Xindome -->
 				<div class="team-content">
 					<div class="pic">
 						<img src="galeira/imagens/Funete.jpg" alt="">
@@ -392,11 +485,11 @@
 					<ul class="social">
 						<li><a href="#"><i class="fab fa-facebook"></i></a></li>
 						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fab fa-google-plus"></i></a></li>
+						<li><a href="#"><i class="fab fa-github"></i></a></li>
 						<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
 					</ul>
 				</div>
-				<!-- Name: Emanuel Cândido -->
+				<!-- Name: Funete Xindome -->
 			</article>
 
 

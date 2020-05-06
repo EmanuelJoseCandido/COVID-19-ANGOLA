@@ -180,7 +180,102 @@ header ul li:hover ul{
 /* Numbers */
 #numbers{
     background: #181817;
+    width: 100%;
 }
+
+#numbers .tables{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+thead{
+    background: rgba(0, 0, 0, 0.8);
+    color: #E84C3D;
+}
+
+tbody{
+    background: #181817;
+    color: black;
+}
+
+#numbers .table td:nth-child(){
+    text-align: initial;
+}
+
+#numbers .table td, th{
+    border: 1px solid black;
+    text-align: center;
+}
+
+#numbers .table tr:nth-child(even){
+    background: #2D2D2D;
+}
+
+
+#numbers .table{
+    margin-top: 50px;
+    border-collapse: collapse;
+	border: 1px solid black;
+    background: #1D1D1D;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+    border-radius: 8px/7px;
+    color: #E84C3D;
+}
+
+#numbers .table td.two-objects{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+}
+
+#numbers .table td.two-objects span{
+    padding: 5px;
+}
+
+#numbers .table th{
+    padding: 10px;
+    border-radius: 8px/7px;
+}
+
+#numbers .info{
+    position: relative;
+    height: 450px;
+    width: 100%;
+    border-radius: 8px/7px;
+    transition: all 650ms ease-in-out;
+}
+
+#numbers .info-covid{
+    background: #181817;
+    color: #E84C3D;
+    text-align: center;
+    border-radius: 8px/7px;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+    transition: all 650ms ease-in-out;
+}
+
+#numbers .info-covid h2{
+    padding: 10px;
+}
+
+.numbers-covid{
+    background: rgba(0, 0, 0, 0.8);
+}
+
+#numbers .info-covid .numbers-covid{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
 
 /* Numbers */
 
