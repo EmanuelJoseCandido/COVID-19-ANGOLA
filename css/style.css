@@ -28,7 +28,6 @@ li, a, button{
 header{
     background-color: #171716;
     box-shadow: 1px 2px 5px rgba(0,0,0,.31);  
-    width: 100vw;
     height: 9vh;
     display: flex;
     justify-content: space-between;
@@ -174,47 +173,46 @@ header .nav-links .footer-nav .social li a:hover{
 
 .hero .titles{
     color: #E84C3D;
-    font-size: 25pt;
+    font-size: 18pt;
 }
 
 .hero .text{
     width: 100%;
-    position: absolute;
-    top: 30%;
+    margin-top: 20px;
     text-align: center;
 }
 
 .hero .text .update{
-    float: left;
-    margin-top: 10px;
-    margin-left: 70px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .hero .data{
-    margin-top: 65px;
+    margin-top: 40px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
 .hero .data div{
     display: flex;
+    position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-    height: 120px;
-    width: 250px;
+    height: 100px;
+    width: 200px;
     font-size: 15pt;
     border-radius: 8px/7px;
+    margin: 10px;
 }
 
 .hero .data .info-number{
     font-size: 25pt;
 }
-
-
 /* Hero */
 
 
@@ -612,7 +610,44 @@ tbody{
     header .nav-links .footer-nav{
         display: none;
     }
-    
     /* Header */
+
+    /* Hero */
+    .hero .titles{
+        color: #E84C3D;
+        font-size: 25pt;
+    }
+
+    .hero .text{
+        width: 100%;
+        position: absolute;
+        top: 30%;
+        text-align: center;
+    }
+
+    .hero .data{
+        margin-top: 65px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        text-align: center;
+    }
+
+    .hero .data div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid black;
+        height: 120px;
+        width: 250px;
+        font-size: 15pt;
+        border-radius: 8px/7px;
+    }
+
+    .hero .data .info-number{
+        font-size: 25pt;
+    }
+    /* Hero */
 }
 /* Media Query of 858px */
