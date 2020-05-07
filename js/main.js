@@ -91,3 +91,17 @@ window.onclick = function(event) {
     }
 }
 /* Modal */
+
+/* Header:nav-links */
+const open = document.querySelector('.menu-icons.open');
+const close = document.querySelector('.menu-icons.close');
+const navLinks = document.querySelector('.nav-links');
+
+open.addEventListener('click', () => {
+    navLinks.classList.toggle("open");
+}); 
+
+close.addEventListener('click', () => {
+    navLinks.classList.remove("open");
+}); 
+/* Header:nav-links */

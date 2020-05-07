@@ -51,21 +51,29 @@
 				</span>
 			</div>
 			<nav>
+				<div class="menu-icons open"> 
+                    <i class="fa fa-bars"></i>
+                </div>
 				<ul class="nav-links">
-					<li><a href="#inicio">Inicio</a></li>
-					<li><a href="#numbers">Números</a></li>
-					<li><a href="#medidas">Medidas</a></li>
-					<li><a href="#about">Sobre</a>
-						<ul class="sub-menu">
-							<li><a href="#covid-19">Covid-19</a></li>
-							<li><a href="#team">Equipe</a></li>
-							<li><a href="#website">Website</a></li>
+					<div class="menu-icons close"> 
+                        <i class="fa fa-times"></i>
+					</div>
+					<li><a href="#" class="list-normal">Início</a></li>
+					<li><a href="#numbers" class="list-normal">Números</a></li>
+					<li><a href="#covid-19" class="list-normal">Covid-19</a></li>
+					<li><a href="#team" class="list-normal">Equipe</a></li>
+					<li><a href="#contact" class="contact">Contacto</a></li>
+					<div class="footer-nav">
+						<p>Copyright &copy; <?php echo $anoActual; ?> <br> Criado por <a href="http://facebook.com/EmanuelCandido">Emanuel Cândido</a></p>
+						<ul class="social">
+							<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fab fa-github"></i></a></li>
+							<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
 						</ul>
-					</li>
+					</div>
 				</ul>
 			</nav>
-
-			<a class="contact" href="#contact"><button>Contacto</button></a>
 		</header>
 		<!-- Header -->
 
@@ -74,7 +82,7 @@
 		<section class="hero">
 			<div class="text">
 				<div class="titles">
-					<h1>Painel do Covid-19 em tempo real</h1>
+					<h1>Estado do Covid-19 em Angola</h1>
 				</div>
 
 				<div class="data">
@@ -89,15 +97,16 @@
 					</div>
 
 					<div class="deaths">
-						<p class="info-label">Mortes</p>
+						<p class="info-label">Óbitos</p>
 						<p class="info-number deaths"><?php echo $mortesAngola; ?></p>
-					</div>					
+					</div>	
+					
+					<div class="active">
+						<p class="info-label">Casos ativos</p>
+						<p class="info-number recovered"><?php echo $casosAtivosAngola; ?></p>	
+					</div>
 				</div>
-			</div>
-
-			<div class="active">
-				<p class="info-label">Casos ativos</p>
-				<p class="info-number recovered"><?php echo $casosAtivosAngola; ?></p>	
+				<p class="update">Última actualização: <?php echo $actualizacaoAngola; ?></p>
 			</div>
 		</section>
 		<!-- Hero -->
@@ -128,7 +137,7 @@
 					</div>
 
 					<div class="deaths">
-						<p class="info-label">Mortes</p>
+						<p class="info-label">Óbitos</p>
 						<p class="info-number deaths"><?php echo $mortesAngola; ?></p>
 					</div>
 				</div>
@@ -140,7 +149,7 @@
 						<tr>
 							<th class="">Países</th>
 							<th class="">Casos</th>
-							<th class="">Mortes</th>
+							<th class="">Óbitos</th>
 							<th class="">Recup.</th>
 						</tr>
 					</thead>
@@ -161,7 +170,7 @@
 						<tr>
 							<th class="">Países</th>
 							<th class="">Casos</th>
-							<th class="">Mortes</th>
+							<th class="">Óbitos</th>
 							<th class="">Recup.</th>
 						</tr>
 					</thead>
@@ -490,13 +499,6 @@
 					</ul>
 				</div>
 				<!-- Name: Funete Xindome -->
-			</article>
-
-
-			<article id="website">
-				<!-- In construction  -->
-				<h1>Website</h1>
-
 			</article>
 		</section>
 		<!-- About -->
