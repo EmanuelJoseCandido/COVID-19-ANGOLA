@@ -133,6 +133,7 @@ header .nav-links .contact{
     border: none;
     border-radius: 50px;
     cursor: pointer;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
     transition: all .3s ease-in-out;
 }
 
@@ -218,74 +219,30 @@ header .nav-links .footer-nav .social li a:hover{
 
 /* Numbers */
 #numbers{
-    background: #181817;
-    width: 100%;
-}
-
-#numbers .tables{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    
-}
-
-thead{
-    background: rgba(0, 0, 0, 0.8);
-    color: #E84C3D;
-}
-
-tbody{
+    align-items: baseline;
+    justify-content: center;
+    width: 100%;
+    padding: 30px;
     background: #181817;
-    color: black;
 }
 
-#numbers .table td:nth-child(){
-    text-align: initial;
-}
-
-#numbers .table td, th{
-    border: 1px solid black;
-    text-align: center;
-}
-
-#numbers .table tr:nth-child(even){
-    background: #2D2D2D;
-}
-
-
-#numbers .table{
-    margin-top: 50px;
-    border-collapse: collapse;
-	border: 1px solid black;
-    background: #1D1D1D;
-    box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
-    border-radius: 8px/7px;
+#numbers h1{
     color: #E84C3D;
+    font-size: 4rem;
+    opacity: .2;
+    position: absolute;
+    transition: all 650ms ease-in-out;
 }
 
-#numbers .table td.two-objects{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 0px;
-    padding-left: 10px;
-    padding-right: 10px;
-    
-}
-
-#numbers .table td.two-objects span{
-    padding: 5px;
-}
-
-#numbers .table th{
-    padding: 10px;
-    border-radius: 8px/7px;
+#numbers:hover h1{
+    opacity: 1;
 }
 
 #numbers .info{
+    margin-top: 50px;
     position: relative;
-    height: 450px;
     width: 100%;
     border-radius: 8px/7px;
     transition: all 650ms ease-in-out;
@@ -301,7 +258,8 @@ tbody{
 }
 
 #numbers .info-covid h2{
-    padding: 10px;
+    padding: 15px;
+    font-size: 15pt;
 }
 
 .numbers-covid{
@@ -310,29 +268,123 @@ tbody{
 
 #numbers .info-covid .numbers-covid{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     text-align: center;
+    padding: 10px;
 }
 
+#numbers .info-covid .numbers-covid div{
+    margin: 5px;
+}
 
+#numbers .pc{
+    display: none;
+}
+
+#numbers .uppercase{
+    text-transform: uppercase;
+}
+
+#numbers .tables{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+thead{
+    background: rgba(0, 0, 0, 0.8);
+    color: #E84C3D;
+}
+
+tbody{
+    background: #181817;
+    color: black;
+}
+
+#numbers .table{
+    width: 100%;
+    margin-top: 50px;
+    border-collapse: collapse;
+	border: 1px solid black;
+    background: #1D1D1D;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+    border-radius: 8px/7px;
+    color: #E84C3D;
+}
+
+#numbers .table td.two-objects{
+    display: flex;
+    align-items: center;
+    border: 0px;
+    padding-left: 10px;
+    padding-right: 10px;   
+}
+
+#numbers .table td.two-objects i{
+  color: #FD7E14;
+}
+
+#numbers .table td.two-objects span{
+    padding: 5px;
+}
+
+#numbers .table th{
+    padding: 10px;
+}
+
+#numbers .table td, th{
+    border: 1px solid black;
+    text-align: center;
+}
+
+#numbers .table tr:nth-child(even){
+    background: #2D2D2D;
+}
+
+#numbers .info .buttonTableMundial{
+    margin-top: 50px;
+}
+
+#numbers .info .buttonTableMundial{
+    text-align: center;
+    padding: 9px 25px;
+    background-color: #E84C3D;
+    opacity: .5;
+    color: #080807;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+    transition: all .3s ease-in-out;
+}
+
+#numbers .info .buttonTableMundial:hover{
+    opacity: 1;
+}
 /* Numbers */
+
 
 /* About */
 #about{
     background: #181817;   
 }
 
-#covid-19 h1, #team h1, #website h1,#about h1, #numbers h1{
+#covid-19 h1, #team h1, #website h1,#about h1{
     color: #E84C3D;
     font-size: 10rem;
     opacity: .2;
     position: absolute;
     margin-top: -120px;
     margin-left: -700px;
+    transition: all 650ms ease-in-out;
 }
 
-#numbers, #team, #website, #covid-19{
+#team, #website, #covid-19{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -392,14 +444,14 @@ tbody{
     .modal-covid-19{
         display: none;
         background: rgba(0, 0, 0, .8);
-        position: fixed; /* Stay in place */
-        z-index: 1000; /* Sit on top */
-        padding-top: 50px; /* Location of the box */
+        position: fixed;
+        z-index: 1000; 
+        padding-top: 50px; 
         left: 0;
         top: 0;
-        width: 100%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */   
+        width: 100%; 
+        height: 100%;
+        overflow: auto;   
     }
 
     .description-covid-19{
@@ -452,7 +504,6 @@ tbody{
         to {top:0; opacity:1}
     }
 
-    /* The Close Button */
     .modal-covid-19 .close {
         position: relative;
         z-index: 1500;
@@ -649,5 +700,75 @@ tbody{
         font-size: 25pt;
     }
     /* Hero */
+
+    /* Numbers */
+    #numbers{
+        padding: 120px;
+    }
+
+    #numbers h1{
+        color: #E84C3D;
+        font-size: 10rem;
+        opacity: .2;
+        position: absolute;
+        margin-top: -120px;
+        margin-left: -700px;
+        transition: all 650ms ease-in-out;
+    }
+
+    #numbers .info{
+        height: 450px;
+        margin-top: initial;
+    }
+
+    #numbers .info-covid h2{
+        padding: 10px;
+        font-size: 22pt;
+    }
+
+    #numbers .info-covid .numbers-covid{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        text-align: center;
+        padding: initial;
+        font-size: 15pt;
+    }
+
+    #numbers .phone{
+        display: none;
+    }
+    
+    #numbers .pc{
+        display: initial;
+    }
+
+    #numbers .uppercase{
+        text-transform: initial;
+    }
+    
+    #numbers .tables{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+
+    #numbers .table{
+        width: initial;
+        font-size: 15pt;
+    }
+  
+    #numbers .table td.two-objects{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border: 0px;
+        padding-left: 10px;
+        padding-right: 10px;   
+    }
+
+    /* Numbers */
 }
 /* Media Query of 858px */

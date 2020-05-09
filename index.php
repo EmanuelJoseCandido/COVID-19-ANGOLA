@@ -7,7 +7,7 @@
 -->
 
 <!-- Include the page "scraping.php" -->
-<?php include_once("php/scraping.php"); $casosAtivosAngola = 0?>
+<?php include_once("php/scraping.php");?>
 <!-- Include the page "scraping.php" -->
 
 <!DOCTYPE html>
@@ -26,8 +26,8 @@
 		<!-- Stylesheet this page -->
 
 		<!-- Stylesheet this page -->
-		<link rel="stylesheet" href="../App_Yetu/vendor/fontawesome-free-5.11.2-web/css/all.css"> 
-		<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css"> -->
+		<link rel="stylesheet" href="../Yetu/fontawesome-free-5.13.0-web/css/all.css"> 
+		<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"> -->
 		<!-- Stylesheet this page -->
 
 		<title>COVID-19 | ANGOLA</title>
@@ -61,7 +61,6 @@
 					<li><a href="#" class="list-normal">Início</a></li>
 					<li><a href="#numbers" class="list-normal">Números</a></li>
 					<li><a href="#covid-19" class="list-normal">Covid-19</a></li>
-					<li><a href="#team" class="list-normal">Equipe</a></li>
 					<li><a href="#contact" class="contact">Contacto</a></li>
 					<div class="footer-nav">
 						<p>Copyright &copy; <?php echo $anoActual; ?> <br> Criado por <a href="http://facebook.com/EmanuelCandido">Emanuel Cândido</a></p>
@@ -87,23 +86,23 @@
 
 				<div class="data">
 					<div class="cases">
-						<p class="info-label">Casos</p>
-						<p class="info-number cases"><?php echo $casosConfirmadosAngola; ?></p>
+						<p class="info-label"><span class="pc">Confirmados</span><span class="phone">Casos</span></p>
+						<p class="info-number cases"><?php echo $casesAngola; ?></p>
 					</div>
 
 					<div class="recovered">
 						<p class="info-label">Recuperados</p>
-						<p class="info-number recovered"><?php echo $recuperadosAngola; ?></p>
+						<p class="info-number recovered"><?php echo $recoveredAngola; ?></p>
 					</div>
 
 					<div class="deaths">
 						<p class="info-label">Óbitos</p>
-						<p class="info-number deaths"><?php echo $mortesAngola; ?></p>
+						<p class="info-number deaths"><?php echo $deathsAngola; ?></p>
 					</div>	
 					
 					<div class="active">
-						<p class="info-label">Casos ativos</p>
-						<p class="info-number recovered"><?php echo $casosAtivosAngola; ?></p>	
+						<p class="info-label">Ativos</p>
+						<p class="info-number recovered"><?php echo $activeCasesAngola; ?></p>	
 					</div>
 				</div>
 				<p class="update">Última actualização: <?php echo $actualizacaoAngola; ?></p>
@@ -117,91 +116,92 @@
 			<!-- In construction  -->
 			<h1>Números</h1>
 			
-		<div class="info">
-			<div class="info-covid">
-				<h2>Estado do Covid-19 em Angola</h2>
-				<div class="numbers-covid">
-					<div class="cases">
-						<p class="info-label">Casos</p>
-						<p class="info-number cases"><?php echo $casosConfirmadosAngola; ?></p>
-					</div>
+			<div class="info">
+				<div class="info-covid">
+					<h2>Estado do Covid-19 no Mundo</h2>
+					<div class="numbers-covid">
+						<div class="cases">
+							<p class="info-label"><span class="pc">Confirmados</span><span class="phone">Casos</span></p>
+							<p class="info-number cases"><?php echo $casesWorld; ?></p>
+						</div>
 
-					<div class="active">
-						<p class="info-label">Casos ativos</p>
-						<p class="info-number recovered"><?php echo $casosAtivosAngola; ?></p>	
-					</div>
+						<div class="recovered">
+							<p class="info-label">Recuperados</p>
+							<p class="info-number recovered"><?php echo $recoveredWorld; ?></p>
+						</div>
 
-					<div class="recovered">
-						<p class="info-label">Recuperados</p>
-						<p class="info-number recovered"><?php echo $recuperadosAngola; ?></p>
-					</div>
+						<div class="deaths">
+							<p class="info-label">Óbitos</p>
+							<p class="info-number deaths"><?php echo $deathsWorld; ?></p>
+						</div>
 
-					<div class="deaths">
-						<p class="info-label">Óbitos</p>
-						<p class="info-number deaths"><?php echo $mortesAngola; ?></p>
+						<div class="active">
+							<p class="info-label">Ativos</p>
+							<p class="info-number recovered"><?php echo $activeCasesWorld; ?></p>	
+						</div>
 					</div>
 				</div>
+				<div class="tables">
+					<table class="table continentes">
+						<caption>Estado do Covid-19 nos Continentes</caption>
+						<thead>
+							<tr>
+								<th class="">Países</th>
+								<th class=""><span class="pc">Confirmados</span><span class="phone">Casos</span></th>
+								<th class="">Recuperados</th>
+								<th class="">Óbitos</th>
+								<th class="">Ativos</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td class="two-objects"></i><span>África</span></td>
+								<td><?php echo $casesAfrica; ?></td>
+								<td><?php echo $recoveredAfrica; ?></td>
+								<td><?php echo $deathsAfrica; ?></td>
+								<td><?php echo $activeCasesAfrica; ?></td> 
+							</tr>
+							<tr>
+								<td class="two-objects"><span>América do Norte</span></td>
+								<td><?php echo $casesNorthAmerica; ?></td>
+								<td><?php echo $recoveredNorthAmerica; ?></td>
+								<td><?php echo $deathsNorthAmerica; ?></td>
+								<td><?php echo $activeCasesNorthAmerica; ?></td> 
+							</tr>
+							<tr>
+								<td class="two-objects"><span>América do Sul</span></td>
+								<td><?php echo $casesSouthAmerica; ?></td>
+								<td><?php echo $recoveredSouthAmerica; ?></td>
+								<td><?php echo $deathsSouthAmerica; ?></td>
+								<td><?php echo $activeCasesSouthAmerica; ?></td> 
+							</tr>
+							<tr>
+								<td class="two-objects"></i><span>Ásia</span></td>
+								<td><?php echo $casesAsia; ?></td>
+								<td><?php echo $recoveredAsia; ?></td>
+								<td><?php echo $deathsAsia; ?></td>
+								<td><?php echo $activeCasesAsia; ?></td> 
+							</tr>
+							<tr>
+								<td class="two-objects"><span>Europa</span></td>
+								<td><?php echo $casesEurope; ?></td>
+								<td><?php echo $recoveredEurope; ?></td>
+								<td><?php echo $deathsEurope; ?></td>
+								<td><?php echo $activeCasesEurope; ?></td> 
+							</tr>
+							<tr>
+								<td class="two-objects"><span>Oceania</span></td>
+								<td><?php echo $casesOceania; ?></td>
+								<td><?php echo $recoveredOceania; ?></td>
+								<td><?php echo $deathsOceania; ?></td>
+								<td><?php echo $activeCasesOceania; ?></td> 
+							</tr>
+						</tbody>
+					</table>
+
+					<a href="" class="buttonTableMundial" >Tabela mundial</a>
+				</div>
 			</div>
-			<div class="tables">
-				<table class="table table-CPLP">
-					<caption>Quadro dos membros da CPLP</caption>
-					<thead>
-						<tr>
-							<th class="">Países</th>
-							<th class="">Casos</th>
-							<th class="">Óbitos</th>
-							<th class="">Recup.</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="two-objects"><img src="galeira/imagens/22px-Flag_of_Angola.webp" alt=""><span>Angola</span></td>
-							<td><?php echo $casosConfirmadosAngola; ?></td>
-							<td><?php echo $mortesAngola; ?></td>
-							<td><?php echo $recuperadosAngola; ?></td>
-						</tr>
-						
-					</tbody>
-				</table>
-
-				<table class="table table-CPLP">
-					<caption>Quadro dos membros da CPLP</caption>
-					<thead>
-						<tr>
-							<th class="">Países</th>
-							<th class="">Casos</th>
-							<th class="">Óbitos</th>
-							<th class="">Recup.</th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td class="two-objects"><img src="galeira/imagens/22px-Flag_of_Angola.webp" alt=""><span>Angola</span></td>
-							<td>35</td>
-							<td>2</td>
-							<td>11</td>
-						</tr>
-						<tr>
-							<td class="two-objects"><img src="galeira/imagens/22px-Flag_of_Angola.webp" alt=""><span>Angola</span></td>
-							<td>35</td>
-							<td>2</td>
-							<td>11</td>
-						</tr>
-
-						<tr>
-							<td class="two-objects"><img src="galeira/imagens/22px-Flag_of_Angola.webp" alt=""><span>Angola</span></td>
-							<td>35</td>
-							<td>2</td>
-							<td>11</td>
-						</tr>
-					</tbody>
-				</table>
-
-				
-			</div>
-		</div>
-
-			
 
 		</section>
 		<!-- Numbers -->
@@ -433,72 +433,6 @@
 				</div>
 				
 
-			</article>
-
-
-			<article id="team">
-				<!-- In construction  -->
-				<h1>Equipe</h1>
-
-				<!-- Name: João Sessa -->
-				<div class="team-content">
-					<div class="pic">
-						<img src="galeira/imagens/Sessa.jpg" alt="">
-					</div>
-					
-					<div class="description">
-						<h3 class="name">João Sessa</h3>
-						<span class="occupation">Desenvolvedor Web</span>
-					</div>
-
-					<ul class="social">
-						<li><a href="#"><i class="fab fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fab fa-github"></i></a></li>
-						<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-					</ul>
-				</div>
-				<!-- Name: João Sessa -->
-
-				<!-- Name: Emanuel Cândido -->
-				<div class="team-content">
-					<div class="pic">
-						<img src="galeira/imagens/Emanuel.jpg" alt="">
-					</div>
-					
-					<div class="description">
-						<h3 class="name">Emanuel Cândido</h3>
-						<span class="occupation">Desenvolvedor Web</span>
-					</div>
-
-					<ul class="social">
-						<li><a href="#"><i class="fab fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fab fa-github"></i></a></li>
-						<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-					</ul>
-				</div>
-				<!-- Name: Emanuel Cândido -->
-
-				<!-- Name: Funete Xindome -->
-				<div class="team-content">
-					<div class="pic">
-						<img src="galeira/imagens/Funete.jpg" alt="">
-					</div>
-					
-					<div class="description">
-						<h3 class="name">Funete Xindome</h3>
-						<span class="occupation">Desenvolvedor Web</span>
-					</div>
-
-					<ul class="social">
-						<li><a href="#"><i class="fab fa-facebook"></i></a></li>
-						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-						<li><a href="#"><i class="fab fa-github"></i></a></li>
-						<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-					</ul>
-				</div>
-				<!-- Name: Funete Xindome -->
 			</article>
 		</section>
 		<!-- About -->
