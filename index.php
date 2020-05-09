@@ -205,24 +205,22 @@
 
 		</section>
 		<!-- Numbers -->
+
+		
+		<!-- DIV PIC -->
+		<div class="pic covid-19">
+			<img src="galeira/imagens/8.png" alt="covid-19">
+		</div>
+		<!-- DIV PIC -->
 		
 
-		<!-- Medidas -->
-		<section id="medidas">
-			<!-- In construction  -->
-		</section>
-		<!-- Medidas -->
-
-
 		<!-- About -->
-		<section id="about">
-			<article id="covid-19">
-				<!-- In construction  -->
+			<section id="covid-19">
 				<h1>Covid-19</h1>
 
 				<div class="about-covid-19">
 					<div class="item-covid-19">
-						<i class="fab fa-facebook"></i>
+						<i class="fas fa-virus"></i>
 						<h2>O que é Covid-19?</h2>
 						<div class="modal-covid-19">
 							<span class="close">&times;</span>
@@ -252,7 +250,7 @@
 					</div>
 
 					<div class="item-covid-19">
-						<i class="fab fa-facebook"></i>
+						<i class="fas fa-head-side-cough">­</i>
 						<h2>Quais são os sintomas?</h2>
 						<div class="modal-covid-19">
 							<span class="close">&times;</span>
@@ -276,7 +274,7 @@
 					</div>
 
 					<div class="item-covid-19">
-						<i class="fab fa-facebook"></i>
+						<i class="fas fa-people-arrows"></i>
 						<h2>Como é transmitido?</h2>
 						<div class="modal-covid-19">
 							<span class="close">&times;</span>
@@ -301,7 +299,7 @@
 					</div>
 
 					<div class="item-covid-19">
-						<i class="fab fa-facebook"></i>
+						<i class="fas fa-user-md"></i>
 						<h2>Diagnóstico?</h2>
 						<div class="modal-covid-19">
 							<span class="close">&times;</span>
@@ -342,7 +340,7 @@
 					</div>
 
 					<div class="item-covid-19">
-						<i class="fab fa-facebook"></i>
+						<i class="fas fa-head-side-mask"></i>
 						<h2>Como se proteger?</h2>
 						<div class="modal-covid-19">
 							<span class="close">&times;</span>
@@ -400,7 +398,7 @@
 					</div>
 
 					<div class="item-covid-19">
-						<i class="fab fa-facebook"></i>
+						<i class="fas fa-procedures"></i>
 						<h2>Se eu ficar doente?</h2>
 						<div class="modal-covid-19">
 							<span class="close">&times;</span>
@@ -428,12 +426,8 @@
 								</span>
 							</div>
 						</div>
-					</div>
-					
+					</div>	
 				</div>
-				
-
-			</article>
 		</section>
 		<!-- About -->
 	</body>

@@ -368,224 +368,233 @@ tbody{
 }
 /* Numbers */
 
+/* DIV PIC */
 
-/* About */
-#about{
-    background: #181817;   
-}
-
-#covid-19 h1, #team h1, #website h1,#about h1{
-    color: #E84C3D;
-    font-size: 10rem;
-    opacity: .2;
+.pic.covid-19{
     position: absolute;
-    margin-top: -120px;
-    margin-left: -700px;
+    right: 0;
+    margin-top: -50px;
     transition: all 650ms ease-in-out;
 }
 
-#team, #website, #covid-19{
+.pic.covid-19 img{
+    width: 100px;
+    height: 100px;
+}
+
+/* DIV PIC */
+
+
+/* Covid-19 */
+
+#covid-19{
+    background: #edf0f1;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
     justify-content: center;
-    padding: 120px;
+    padding: 30px;
 }
 
-    /* Covid-19 */
+#covid-19 h1{
+    color: #181817;
+    font-size: 4rem;
+    opacity: .6;
+    position: absolute;
+    transition: all 650ms ease-in-out;
+}
 
-    #covid-19{
-        background: #edf0f1;
-    }
+#covid-19:hover h1{
+    opacity: 1;
+}
 
-    #covid-19 .about-covid-19{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        position: relative;
-        height: 450px;
-        width: 90%;
-        background: #181817;
-        border-radius: 8px/7px;
-        box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
-        transition: all 650ms ease-in-out;
-    }
+#covid-19 .about-covid-19{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    border-radius: 8px/7px;
+    transition: all 650ms ease-in-out;
+    margin-top: 40px;
+}
 
-    #covid-19 .about-covid-19 .item-covid-19{
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        margin: 30px;
-        height: 150px;
-        width: 200px;
-        background: #080807;
-        border-radius: 8px/7px;
-        box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
-        cursor: pointer;
-        transition: all 650ms ease-in-out;
-    }
+.item-covid-19 i{
+    font-size: 40pt;
+}
 
-    #covid-19 .about-covid-19 .item-covid-19:hover h2{
-        color: #F1C40F;
-        opacity: 1;
-    }
+#covid-19 .about-covid-19 .item-covid-19{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+    background: #edf0f1;
+    border-radius: 8px/7px;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+    cursor: pointer;
+    transition: all 650ms ease-in-out;
+}
 
-    #covid-19 .about-covid-19 .item-covid-19 h2{
-        color: #F1C40F;
-        opacity: .7;
-        transition: all 650ms ease-in-out;
-    }
+#covid-19 .about-covid-19 .item-covid-19:hover h2{
+    color: #181817;
+    opacity: 1;
+}
 
-    /* Modal */
-    .modal-covid-19{
-        display: none;
-        background: rgba(0, 0, 0, .8);
-        position: fixed;
-        z-index: 1000; 
-        padding-top: 50px; 
-        left: 0;
-        top: 0;
-        width: 100%; 
-        height: 100%;
-        overflow: auto;   
-    }
+#covid-19 .about-covid-19 .item-covid-19 h2{
+    opacity: .7;
+    transition: all 650ms ease-in-out;
+}
 
-    .description-covid-19{
-        position: relative;
-        background-color: #fefefe;
-        margin: auto;
-        padding: 50px;
-        width: 50%;
-        margin-bottom: 50px;
-        border-radius: 8px/7px;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-        -webkit-animation-name: animatetop;
-        -webkit-animation-duration: 0.4s;
-        animation-name: animatetop;
-        animation-duration: 0.4s
-    }
+/* Modal */
+.modal-covid-19{
+    display: none;
+    background: rgba(0, 0, 0, .8);
+    position: fixed;
+    z-index: 1000; 
+    padding-top: 50px; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%;
+    overflow: auto;   
+}
 
-    .description-covid-19 h4, .description-covid-19 h3{
-        text-align: left;
-        margin: 10px;
-    }
+.description-covid-19{
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 50px;
+    width: 50%;
+    margin-bottom: 50px;
+    border-radius: 8px/7px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
 
-    .description-covid-19 h4{
-        margin-top: 50px;
-    }
+.description-covid-19 h4, .description-covid-19 h3{
+    text-align: left;
+    margin: 10px;
+}
 
-    .description-covid-19 p{
-        text-align: justify;
-        text-indent: 50px;
-        margin: 10px;
-    }
+.description-covid-19 h4{
+    margin-top: 50px;
+}
 
-    .description-covid-19 li{
-        color: #080807;
-        text-align: left;
-        margin-left: 30px;
-        text-align: justify;
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
+.description-covid-19 p{
+    text-align: justify;
+    text-indent: 50px;
+    margin: 10px;
+}
 
-    /* Add Animation */
-    @-webkit-keyframes animatetop {
-        from {top:-300px; opacity:0} 
-        to {top:0; opacity:1}
-    }
-    
-    @keyframes animatetop {
-        from {top:-300px; opacity:0}
-        to {top:0; opacity:1}
-    }
+.description-covid-19 li{
+    color: #080807;
+    text-align: left;
+    margin-left: 30px;
+    text-align: justify;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
 
-    .modal-covid-19 .close {
-        position: relative;
-        z-index: 1500;
-        color: #080807;
-        float: right;
-        margin-right: 350px;
-        font-size: 50px;
-        font-weight: bold;
-        transition: all 650ms ease-in-out;
-    }
-    
-    .modal-covid-19 .close:hover,
-    .modal-covid-19 .close:focus {
-        color: #E84C3D;
-        text-decoration: none;
-        cursor: pointer;
-    }
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
 
-    /* Modal */
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
 
-    /* Covid-19 */
+.modal-covid-19 .close {
+    position: relative;
+    z-index: 1500;
+    color: #080807;
+    float: right;
+    margin-right: 350px;
+    font-size: 50px;
+    font-weight: bold;
+    transition: all 650ms ease-in-out;
+}
+
+.modal-covid-19 .close:hover,
+.modal-covid-19 .close:focus {
+    color: #E84C3D;
+    text-decoration: none;
+    cursor: pointer;
+}
+/* Modal */
+
+/* Covid-19 */
 
 
-    /* Team */
+/* Team */
 
-    #team .team-content{
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin: 20px;
-        background: #111110;
-        color: #F1C40F;
-        border-radius: 8px/7px;
-        box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
-        padding: 0px;
-        transition: all 650ms ease-in-out;
-    }
+#team .team-content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+    background: #111110;
+    color: #F1C40F;
+    border-radius: 8px/7px;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+    padding: 0px;
+    transition: all 650ms ease-in-out;
+}
 
-    #team .team-content .pic img{
-        height: 250px;
-        width: 250px;
-        border-radius: 8px 8px 0px 0px;
-    } 
+#team .team-content .pic img{
+    height: 250px;
+    width: 250px;
+    border-radius: 8px 8px 0px 0px;
+} 
 
-    .team-content .description{
-        margin-top: 25px;
-    }
+.team-content .description{
+    margin-top: 25px;
+}
 
-    .team-content .social{
-        width: 100%;
-        margin-top: 25px;
-        bottom: -100px;
-        background: #E84C3D;
-        border-radius: 0px 0px 8px 8px;
-        transition: all 650ms ease-in-out;
-    }
+.team-content .social{
+    width: 100%;
+    margin-top: 25px;
+    bottom: -100px;
+    background: #E84C3D;
+    border-radius: 0px 0px 8px 8px;
+    transition: all 650ms ease-in-out;
+}
 
-    #team .team-content:hover .social{
-        bottom: 0;
-    }
+#team .team-content:hover .social{
+    bottom: 0;
+}
 
-    .social li{
-        display: inline-block;
-    }
+.social li{
+    display: inline-block;
+}
 
-    .social li a{
-        color: #111110;
-        display: block;
-        padding: 10px;
-        font-size: 20px;
-        transition: all 650ms ease-in-out;
-    }
+.social li a{
+    color: #111110;
+    display: block;
+    padding: 10px;
+    font-size: 20px;
+    transition: all 650ms ease-in-out;
+}
 
-    .social li a:hover{
-        background: #111110;
-        color: #F1C40F;
-    }
-    /* Team */
+.social li a:hover{
+    background: #111110;
+    color: #F1C40F;
+}
+/* Team */
 
-/* About */
 
 
 /* Footer */
@@ -707,13 +716,10 @@ tbody{
     }
 
     #numbers h1{
-        color: #E84C3D;
         font-size: 10rem;
-        opacity: .2;
         position: absolute;
         margin-top: -120px;
-        margin-left: -700px;
-        transition: all 650ms ease-in-out;
+        margin-left: -650px;
     }
 
     #numbers .info{
@@ -768,7 +774,53 @@ tbody{
         padding-left: 10px;
         padding-right: 10px;   
     }
-
     /* Numbers */
+
+    /* DIV PIC */
+
+    .pic.covid-19{
+        position: absolute;
+        right: 0;
+        margin-top: -120px;
+        transition: all 650ms ease-in-out;
+    }
+
+    .pic.covid-19 img{
+        width: initial;
+        height: initial;
+    }
+
+    /* DIV PIC */
+
+    /* Covid-19 */
+
+    #covid-19 .about-covid-19{
+        margin-top: 60px;
+        padding: 0px 120px;
+    }
+
+    #covid-19 h1{
+        font-size: 10rem;
+        position: absolute;
+        margin-top: -30px;
+        margin-left: -700px;
+    }
+
+    #covid-19 .about-covid-19 .item-covid-19{
+        margin: 20px 20px 20px 20px;
+        height: 230px;
+        width: 230px;
+        background: #edf0f1;
+    }
+
+    /* Covid-19  */
+}
+/* Media Query of 858px */
+
+
+/* Media Query of 858px */
+@media screen and (min-width: 858px)
+{
+
 }
 /* Media Query of 858px */
