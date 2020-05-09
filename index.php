@@ -146,9 +146,9 @@
 						<caption>Estado do Covid-19 nos Continentes</caption>
 						<thead>
 							<tr>
-								<th class="">Países</th>
+								<th class=""></th>
 								<th class=""><span class="pc">Confirmados</span><span class="phone">Casos</span></th>
-								<th class="">Recuperados</th>
+								<th class="">Recup</th>
 								<th class="">Óbitos</th>
 								<th class="">Ativos</th>
 							</tr>
@@ -433,8 +433,66 @@
 	</body>
 
 	<!-- Footer -->
-	 <footer>
-		<p>Todos os direitos reservados <br> Copyright &copy; 2020 - by <a href="http://facebook.com/EmanuelCandido">Emanuel Cândido</a></p>
+	 <footer id="contact">
+		<img src="galeira/imagens/palanca-negra.gif" alt="palanca-negra" class="palanca">
+		<div class="logo">
+				<span class="covid">
+					<span class="black">
+						<span class="black">Co</span><span class="yellow">vi</span><span class="red">d-19</span>
+					</span> 
+				</span> 
+				<span class="barra">
+					<span class="yellow">|</span>
+				</span>
+				<span class="angola">
+					<span class="black">An</span><span class="yellow">go</span><span class="red">la</span>
+				</span>
+			</div>
+		<div class="first-content">
+			<div class="item-footer">
+				<h3>Menu</h3>
+				<ul>
+					<li><a href="#">Início</a></li>
+					<li><a href="#numbers">Números</a></li>
+					<li><a href="#covid-19">Covid-19</a></li>
+					<li><a href="#contact">Contacto</a></li>
+				</ul>
+			</div>
+
+			<div class="item-footer">
+				<h3>Emergência</h3>
+				<ul>
+					<li><a href="tel:+244111">111</a></li>
+					<li><a href="tel:+244937503349">937 503 349</a></li>
+				</ul>
+			</div>
+
+			<div class="item-footer">
+				<h3>Links</h3>
+				<ul>
+					<li>João Sessa<a href="#">(link)</a></li>
+					<li>Funete Xindome<a href="#">(link)</a></li>
+					<li><a href="https://www.covid19.gov.ao/">Comissão Interministerial de Angola</a></li>
+					<li><a href="https://www.who.int/">Organização Mundial da Saúde</a></li>
+					<li><a href="https://www.worldometers.info/coronavirus/">Worldometers</a></li>
+				</ul>
+			</div>
+
+			<div class="item-footer">
+				<h3 id="#contact">Contacto</h3>
+				<ul class="social">
+					<li><a href="#"><i class="fab fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fab fa-github"></i></a></li>
+					<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="second-content">
+			<p>Copyright &copy; 2020 </p>
+			<p>Feito por <a href="http://facebook.com/EmanuelCandido">Emanuel Cândido</a></p>
+		</div>
 	</footer>
 	<!-- Footer -->
 
