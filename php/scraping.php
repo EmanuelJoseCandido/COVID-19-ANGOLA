@@ -10,7 +10,7 @@ $DOMDocument = new DOMDocument( '1.0', 'utf-8' );
 $DOMDocument->preserveWhiteSpace = false;
 @$DOMDocument->loadHTML( file_get_contents( $WebSiteAngola) );
 
-$updateAngola = utf8_decode( $DOMDocument->getElementsByTagName( 'div' )->item(12)->nodeValue );
+$updateDate = utf8_decode( $DOMDocument->getElementsByTagName( 'div' )->item(12)->nodeValue );
 $casesAngola = utf8_decode( $DOMDocument->getElementsByTagName( 'span' )->item(4)->nodeValue );
 $deathsAngola = utf8_decode( $DOMDocument->getElementsByTagName( 'span' )->item(5)->nodeValue );
 $recoveredAngola = utf8_decode( $DOMDocument->getElementsByTagName( 'span' )->item(6)->nodeValue ); 
@@ -28,6 +28,21 @@ $casesWorld = utf8_decode( $DOMDocument->getElementsByTagName( 'span' )->item(4)
 $deathsWorld = utf8_decode( $DOMDocument->getElementsByTagName( 'span' )->item(5)->nodeValue );
 $recoveredWorld = utf8_decode( $DOMDocument->getElementsByTagName( 'span' )->item(6)->nodeValue ); 
 $activeCasesWorld = utf8_decode( $DOMDocument->getElementsByTagName( 'div' )->item(29)->nodeValue );
+
+
+for ($i=0; $i < 13; $i++) { 
+    $updateDate[$i] = ' ';
+}
+
+for ($i=33; $i < 37; $i++) { 
+    $updateDate[$i] = ' ';
+}
+
+$dataAlterada = $updateDate[28].$updateDate[29]; 
+$dataAlterada++;
+$dataAlterada .= "";
+$updateDate[28] = $dataAlterada[0];
+$updateDate[29] = $dataAlterada[1];
 
 
 /* North America */

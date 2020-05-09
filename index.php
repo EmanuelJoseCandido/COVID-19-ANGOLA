@@ -105,7 +105,7 @@
 						<p class="info-number recovered"><?php echo $activeCasesAngola; ?></p>	
 					</div>
 				</div>
-				<p class="update">Última actualização: <?php echo $actualizacaoAngola; ?></p>
+				<p class="source">Fonte: <a href="https://www.worldometers.info/coronavirus/">Worldometers</a></p>
 			</div>
 		</section>
 		<!-- Hero -->
@@ -113,11 +113,11 @@
 
 		<!-- Numbers -->
 		<section id="numbers">
-			<!-- In construction  -->
 			<h1>Números</h1>
 			
 			<div class="info">
 				<div class="info-covid">
+					<p class="update">Última actualização: <?php echo $updateDate; ?></p>
 					<h2>Estado do Covid-19 no Mundo</h2>
 					<div class="numbers-covid">
 						<div class="cases">
@@ -148,7 +148,7 @@
 							<tr>
 								<th class=""></th>
 								<th class=""><span class="pc">Confirmados</span><span class="phone">Casos</span></th>
-								<th class="">Recup</th>
+								<th class="">Recup<span class="pc">erados</span></th>
 								<th class="">Óbitos</th>
 								<th class="">Ativos</th>
 							</tr>
