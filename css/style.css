@@ -218,6 +218,9 @@ header .nav-links .footer-nav .social li a:hover{
     margin: 10px;
 }
 
+.hero .data .info-label{
+    margin-top: 5px;
+}
 .hero .data .info-number{
     font-size: 25pt;
 }

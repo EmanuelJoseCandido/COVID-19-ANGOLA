@@ -86,21 +86,25 @@
 
 				<div class="data">
 					<div class="cases">
+						<i class="fas fa-stethoscope"></i>
 						<p class="info-label"><span class="pc">Confirmados</span><span class="phone">Casos</span></p>
 						<p class="info-number cases"><?php echo $casesAngola; ?></p>
 					</div>
 
 					<div class="recovered">
+						<i class="fas fa-smile-beam"></i>
 						<p class="info-label">Recuperados</p>
 						<p class="info-number recovered"><?php echo $recoveredAngola; ?></p>
 					</div>
 
 					<div class="deaths">
+						<i class="fas fa-cross"></i>
 						<p class="info-label">Óbitos</p>
 						<p class="info-number deaths"><?php echo $deathsAngola; ?></p>
 					</div>	
-					
+
 					<div class="active">
+						<i class="fas fa-procedures"></i>
 						<p class="info-label">Ativos</p>
 						<p class="info-number recovered"><?php echo $activeCasesAngola; ?></p>	
 					</div>
@@ -492,6 +496,19 @@
 		<div class="second-content">
 			<p>Copyright &copy; 2020 </p>
 			<p>Feito por <a href="http://facebook.com/EmanuelCandido">Emanuel Cândido</a></p>
+			<i class="fas fa-cross"></i>
+<i class="fas fa-user-md"></i>
+
+<i class="fas fa-people-arrows"></i>
+<i class="fas fa-house-user"></i>
+<i class="fas fa-hands-wash"></i>
+<i class="fas fa-virus"></i>
+<i class="fas fa-virus-slash"></i>
+<i class="fas fa-head-side-mask"></i>
+<i class="fas fa-head-side-cough"></i>
+<i class="fas fa-hand-holding-wate­r"></i>
+<i class="fas fa-pump-soap"></i>
+<i class="fas fa-pump-medical"></i>
 		</div>
 	</footer>
 	<!-- Footer -->

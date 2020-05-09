@@ -48,8 +48,8 @@ $updateDate[29] = $dataAlterada[1];
 /* North America */
 $casesNorthAmerica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(1)->nodeValue );
 $deathsNorthAmerica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(3)->nodeValue );
-$recoveredNorthAmerica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(5)->nodeValue ); 
 $activeCasesNorthAmerica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(6)->nodeValue );
+$recoveredNorthAmerica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(5)->nodeValue ); 
 /* North America */
 
 
@@ -62,19 +62,19 @@ $activeCasesEurope = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->it
 
 
 /* Asia */
-$casesAsia = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(27)->nodeValue );
-$deathsAsia = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(29)->nodeValue );
-$recoveredAsia = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(31)->nodeValue ); 
-$activeCasesAsia = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(32)->nodeValue );
+$casesAsia = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(40)->nodeValue );
+$deathsAsia = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(42)->nodeValue );
+$recoveredAsia = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(44)->nodeValue ); 
+$activeCasesAsia = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(45)->nodeValue );
 /* Asia */
 
 
 /* South America */
-$casesSouthAmerica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(40)->nodeValue );
-$deathsSouthAmerica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(42)->nodeValue );
-$recoveredSouthAmerica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(44)->nodeValue ); 
-$activeCasesNorthAmerica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(45)->nodeValue );
-/* South America */
+$casesSouthAmerica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(27)->nodeValue );
+$deathsSouthAmerica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(29)->nodeValue );
+$recoveredSouthAmerica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(31)->nodeValue ); 
+$activeCasesSouthAmerica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(32)->nodeValue );
+/* SouthAmerica */
 
 
 /* Africa */
