@@ -81,7 +81,7 @@ div.logo:hover span.red{
 .menu-icons.close{
     position: absolute;
     color: #E84C3D;
-    margin-top: -560px;
+    margin-top: -590px;
     margin-left: 10px;
 }
 
@@ -93,7 +93,6 @@ header .nav-links{
     position: fixed;
     top: 0;
     right:  -22rem;
-    margin-top: -20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -855,6 +854,13 @@ footer .second-content{
 
     #numbers .uppercase{
         text-transform: initial;
+    }
+
+    table caption{
+        margin-top: 40px;
+        margin-bottom: initial;
+        font-size: 15pt;
+        color: #E84C3D;
     }
     
     table {

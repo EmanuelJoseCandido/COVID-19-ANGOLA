@@ -31,7 +31,6 @@
 
 		<!-- Stylesheet this page -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
-		<link rel="stylesheet" href="../Yetu/fontawesome-free-5.13.0-web/css/all.css">
 		<!-- Stylesheet this page -->
 
 		<title>COVID-19 | ANGOLA</title>
