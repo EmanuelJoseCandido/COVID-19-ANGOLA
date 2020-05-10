@@ -31,6 +31,7 @@
 
 		<!-- Stylesheet this page -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+		<link rel="stylesheet" href="../Yetu/fontawesome-free-5.13.0-web/css/all.css">
 		<!-- Stylesheet this page -->
 
 		<title>COVID-19 | ANGOLA</title>
@@ -61,10 +62,12 @@
 					<div class="menu-icons close"> 
                         <i class="fa fa-times"></i>
 					</div>
-					<li><a href="#" class="list-normal">Início</a></li>
-					<li><a href="#numbers" class="list-normal">Números</a></li>
-					<li><a href="#covid-19" class="list-normal">Covid-19</a></li>
-					<li><a href="#contact" class="contact">Contacto</a></li>
+					<div class="menu">
+						<li><a href="#" class="list-normal">Início</a></li>
+						<li><a href="#numbers" class="list-normal">Números</a></li>
+						<li><a href="#covid-19" class="list-normal">Covid-19</a></li>
+						<li><a href="#contact" class="contact">Contacto</a></li>
+					</div>
 					<div class="footer-nav">
 						<p>Copyright &copy; <?php echo $anoActual; ?> <br> Criado por <a href="http://facebook.com/EmanuelCandido">Emanuel Cândido</a></p>
 						<ul class="social">
@@ -448,7 +451,7 @@
 		<div class="logo">
 				<span class="covid">
 					<span class="black">
-						<span class="black">Co</span><span class="yellow">vi</span><span class="red">d-19</span>
+					   Covid-19
 					</span> 
 				</span> 
 				<span class="barra">

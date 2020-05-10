@@ -79,14 +79,14 @@ div.logo:hover span.red{
 }
 
 .menu-icons.close{
-    position: absolute;
     color: #E84C3D;
-    margin-top: -590px;
-    margin-left: 10px;
+}
+
+.menu-icons.close i{
+    margin-left: -240px;
 }
 
 header .nav-links{
-    padding-right: 25px;
     width: 18rem;
     height: 100vh;
     background-color: #181817;
@@ -95,7 +95,7 @@ header .nav-links{
     right:  -22rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     z-index: 1500;
     transition: all 650ms ease-in-out;
@@ -142,12 +142,6 @@ header .nav-links .contact:hover{
 header ul li a:not(:only-child)::after {
     padding-left: 2px;
     content: ' ▾';
-}
-
-header .nav-links .footer-nav{
-    position: absolute;
-    margin-top: 550px;
-    margin-left: 25px;
 }
 
 header .nav-links .footer-nav a{
@@ -209,12 +203,14 @@ header .nav-links .footer-nav .social li a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid transparent;
     height: 150px;
     width: 250px;
     font-size: 18pt;
     border-radius: 8px/7px;
     margin: 10px;
+    background: rgba(255, 255, 255, .8);
+    box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
 }
 
 .hero .data .info-label{
@@ -358,7 +354,7 @@ table {
   }
   
   table tbody tr td:before {
-    color: #8a8a87;
+    color: #e1e3e4;
     content: attr(data-label);
     font-weight: 400;
     left: 5px;
@@ -712,6 +708,10 @@ footer .second-content{
         display: none;
     }
 
+    .menu-icons.close{
+        display: none;
+    }
+
     header .nav-links li{
         display: inline-block;
         padding:  18px 15px;
@@ -778,7 +778,6 @@ footer .second-content{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 1px solid black;
         height: 160px;
         width: 250px;
         font-size: 20pt;
@@ -854,13 +853,6 @@ footer .second-content{
 
     #numbers .uppercase{
         text-transform: initial;
-    }
-
-    table caption{
-        margin-top: 40px;
-        margin-bottom: initial;
-        font-size: 15pt;
-        color: #E84C3D;
     }
     
     table {
