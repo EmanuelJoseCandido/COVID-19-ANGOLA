@@ -338,7 +338,7 @@ table {
     padding: 5px;
     position: relative;
     text-align: right;
-    color: #E84C3D;
+    color: #e1e3e4;
   }
 
   table tbody tr td:nth-child(1){
@@ -629,6 +629,11 @@ footer .first-content .item-footer{
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 30px;
+    transition: all .3s ease-in-out;
+}
+
+footer .first-content .item-footer:hover h3{
+    opacity: 1;
 }
 
 footer .social i{
@@ -670,6 +675,11 @@ footer .second-content{
     width: 100%;
     padding: 10px;
     box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+    transition: all .3s ease-in-out;
+}
+
+footer .second-content:hover{
+    opacity: 1;
 }
 
 /* Footer */
@@ -862,6 +872,11 @@ footer .second-content{
         width: 100%;
         border-radius: 8px/7px;
         box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+    }
+
+    table caption{
+        font-size: 20pt;
+        margin-bottom: 0px;
     }
 
     table thead {

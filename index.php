@@ -212,7 +212,7 @@
 						</tbody>
 					</table>
 
-					<a href="" class="buttonTableMundial" >Tabela mundial</a>
+					<!-- <a href="" class="buttonTableMundial" >Tabela mundial</a> -->
 				</div>
 			</div>
 
