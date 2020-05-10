@@ -166,9 +166,8 @@ header .nav-links .footer-nav .social li a:hover{
 /* Hero */
 .hero{
     width: 100%;
-    height: 100vh;
-    background: url('../galeira/imagens/8.png') center no-repeat; 
-    
+    height: 100%;
+    background: url('../galeira/imagens/8.png') center no-repeat;   
 }
 
 .hero .titles{
@@ -185,6 +184,7 @@ header .nav-links .footer-nav .social li a:hover{
 .hero .text .update{
     margin-bottom: -20px;
 }
+
 .hero .text .source{
     text-align: center;
     margin-top: 20px;
@@ -211,9 +211,9 @@ header .nav-links .footer-nav .social li a:hover{
     justify-content: center;
     align-items: center;
     border: 1px solid black;
-    height: 100px;
-    width: 200px;
-    font-size: 15pt;
+    height: 150px;
+    width: 250px;
+    font-size: 18pt;
     border-radius: 8px/7px;
     margin: 10px;
 }
@@ -221,6 +221,7 @@ header .nav-links .footer-nav .social li a:hover{
 .hero .data .info-label{
     margin-top: 5px;
 }
+
 .hero .data .info-number{
     font-size: 25pt;
 }
@@ -607,7 +608,22 @@ tbody{
 
 .social li a:hover{
     background: #111110;
-    color: #F1C40F;
+}
+
+.social .fa-facebook:hover{
+    color: #4862A3;
+}
+
+.social .fa-envelope:hover{
+    color: #E84C3D;
+}
+
+.social .fa-github:hover{
+    color: #080807;
+}
+
+.social .fa-linkedin:hover{
+    color: #0073B2;
 }
 /* Team */
 
@@ -660,7 +676,9 @@ footer .first-content .item-footer{
 
 footer .social i{
     font-size: 20pt;
+    transition: all .3s ease-in-out;
 }
+
 footer .social{
     margin-left: -10px;
 }
@@ -671,7 +689,6 @@ footer .social a{
 
 footer .social a:hover{
     background: none;
-    color: #F1C40F;
 }
 footer li{
     list-style: none;
@@ -682,7 +699,7 @@ footer a{
     transition: all .3s ease-in-out;
 }
 
-footer a:hover{
+footer .links a:hover, footer .menu a:hover, footer .emergencia a:hover{
     color: #F1C40F;
 }
 
@@ -771,6 +788,10 @@ footer .second-content{
     /* Header */
 
     /* Hero */
+    .hero{
+        height: 100vh;
+    }
+    
     .hero .titles{
         color: #E84C3D;
         font-size: 25pt;
@@ -784,7 +805,7 @@ footer .second-content{
     }
 
     .hero .data{
-        margin-top: 65px;
+        margin-top: 30px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -797,9 +818,9 @@ footer .second-content{
         justify-content: center;
         align-items: center;
         border: 1px solid black;
-        height: 120px;
+        height: 160px;
         width: 250px;
-        font-size: 15pt;
+        font-size: 20pt;
         border-radius: 8px/7px;
     }
 

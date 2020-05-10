@@ -65,10 +65,10 @@
 					<div class="footer-nav">
 						<p>Copyright &copy; <?php echo $anoActual; ?> <br> Criado por <a href="http://facebook.com/EmanuelCandido">Emanuel Cândido</a></p>
 						<ul class="social">
-							<li><a href="#"><i class="fab fa-facebook"></i></a></li>
-							<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-							<li><a href="#"><i class="fab fa-github"></i></a></li>
-							<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+							<li><a href="http://facebook.com/EmanuelCandido"><i class="fab fa-facebook"></i></a></li>
+							<li><a href="mailto:emanueljosecandido@hotmail.com"><i class="fas fa-envelope"></i></a></li>
+							<li><a href="https://github.com/EmanuelJoseCandido"><i class="fab fa-github"></i></a></li>
+							<li><a href="https://www.linkedin.com/in/emanuel-c%C3%A2ndido-4b83941a3/"><i class="fab fa-linkedin"></i></a></li>
 						</ul>
 					</div>
 				</ul>
@@ -455,7 +455,7 @@
 		<div class="first-content">
 			<div class="item-footer">
 				<h3>Menu</h3>
-				<ul>
+				<ul class="menu">
 					<li><a href="#">Início</a></li>
 					<li><a href="#numbers">Números</a></li>
 					<li><a href="#covid-19">Covid-19</a></li>
@@ -465,7 +465,7 @@
 
 			<div class="item-footer">
 				<h3>Emergência</h3>
-				<ul>
+				<ul class="emergencia">
 					<li><a href="tel:+244111">111</a></li>
 					<li><a href="tel:+244937503349">937 503 349</a></li>
 				</ul>
@@ -473,8 +473,8 @@
 
 			<div class="item-footer">
 				<h3>Links</h3>
-				<ul>
-					<li>João Sessa<a href="#">(link)</a></li>
+				<ul class="links">
+					<li>João Sessa<a href="https://­angocovid19.000webhos­tapp.com/">(link)</a></li>
 					<li>Funete Xindome<a href="#">(link)</a></li>
 					<li><a href="https://www.covid19.gov.ao/">Comissão Interministerial de Angola</a></li>
 					<li><a href="https://www.who.int/">Organização Mundial da Saúde</a></li>
@@ -485,30 +485,17 @@
 			<div class="item-footer">
 				<h3 id="#contact">Contacto</h3>
 				<ul class="social">
-					<li><a href="#"><i class="fab fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fab fa-github"></i></a></li>
-					<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+					<li><a href="http://facebook.com/EmanuelCandido"><i class="fab fa-facebook"></i></a></li>
+					<li><a href="mailto:emanueljosecandido@hotmail.com"><i class="fas fa-envelope"></i></a></li>
+					<li><a href="https://github.com/EmanuelJoseCandido"><i class="fab fa-github"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/emanuel-c%C3%A2ndido-4b83941a3/"><i class="fab fa-linkedin"></i></a></li>
 				</ul>
 			</div>
 		</div>
 
 		<div class="second-content">
 			<p>Copyright &copy; 2020 </p>
-			<p>Feito por <a href="http://facebook.com/EmanuelCandido">Emanuel Cândido</a></p>
-			<i class="fas fa-cross"></i>
-<i class="fas fa-user-md"></i>
-
-<i class="fas fa-people-arrows"></i>
-<i class="fas fa-house-user"></i>
-<i class="fas fa-hands-wash"></i>
-<i class="fas fa-virus"></i>
-<i class="fas fa-virus-slash"></i>
-<i class="fas fa-head-side-mask"></i>
-<i class="fas fa-head-side-cough"></i>
-<i class="fas fa-hand-holding-wate­r"></i>
-<i class="fas fa-pump-soap"></i>
-<i class="fas fa-pump-medical"></i>
+			<p>Criado por <a href="http://facebook.com/EmanuelCandido">Emanuel Cândido</a></p>
 		</div>
 	</footer>
 	<!-- Footer -->
