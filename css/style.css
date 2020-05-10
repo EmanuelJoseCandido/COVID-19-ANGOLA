@@ -304,69 +304,71 @@ header .nav-links .footer-nav .social li a:hover{
     text-transform: uppercase;
 }
 
-#numbers .tables{
+#numbers .info-covid .tables{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    justify-content: space-between;  
 }
 
-thead{
-    background: rgba(0, 0, 0, 0.8);
-    color: #E84C3D;
-}
-
-tbody{
-    background: #181817;
-    color: black;
-}
-
-#numbers .table{
+table {
+    font-weight: 400;
     width: 100%;
-    margin-top: 50px;
-    border-collapse: collapse;
-	border: 1px solid black;
-    background: #1D1D1D;
-    box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
-    border-radius: 8px/7px;
-    color: #E84C3D;
-}
+    font-size: 15pt;
+  }
 
-#numbers .table td.two-objects{
-    display: flex;
-    align-items: center;
-    border: 0px;
-    padding-left: 10px;
-    padding-right: 10px;   
-}
-
-#numbers .table td.two-objects i{
-  color: #FD7E14;
-}
-
-#numbers .table td.two-objects span{
+  table caption{
+      margin-top: 30px;
+      margin-bottom: 20px;
+      font-size: 13pt;
+      color: #E84C3D;
+  }
+  
+  table thead {
+    display: none;
+    font-weight: 500;
+  }
+  
+  table tbody tr {
+    border: 2px solid #080807;
+    border-radius: 5px;
+    display: block;
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+  
+  table tbody tr td {
+    display: block;
+    font-weight: 500;
     padding: 5px;
-}
+    position: relative;
+    text-align: right;
+    color: #E84C3D;
+  }
 
-#numbers .table th{
-    padding: 10px;
-}
-
-#numbers .table td, th{
-    border: 1px solid black;
+  table tbody tr td:nth-child(1){
     text-align: center;
-}
+    padding: 9px 25px;
+    background-color: #080807;
+    color: #E84C3D;
+    border: none;
+    border-radius: 50px;
+    box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
+    margin-top: -45px;
+    margin-bottom: 20px;
+  }
+  
+  table tbody tr td:before {
+    color: #8a8a87;
+    content: attr(data-label);
+    font-weight: 400;
+    left: 5px;
+    position: absolute;
+  }
 
-#numbers .table tr:nth-child(even){
-    background: #2D2D2D;
-}
 
 #numbers .info .buttonTableMundial{
-    margin-top: 50px;
-}
-
-#numbers .info .buttonTableMundial{
+    margin-top: 30px;
     text-align: center;
     padding: 9px 25px;
     background-color: #E84C3D;
@@ -855,27 +857,75 @@ footer .second-content{
         text-transform: initial;
     }
     
-    #numbers .tables{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; 
+    table {
+        border-collapse: collapse;
+        max-width: 992px;
+        text-align: left;
+        width: 100%;
+        border-radius: 8px/7px;
+        box-shadow: 1px 2px 5px rgba(0,0,0,.31);
     }
 
-    #numbers .table{
-        width: initial;
-        font-size: 15pt;
+    table thead {
+        display: table-header-group;
     }
-  
-    #numbers .table td.two-objects{
+
+    td{
+        border: 1px solid #080807;
+    }
+
+    table thead th:nth-child(5){
+        border-radius: 0px 8px 0px 0px;
+        box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+    }
+
+    table thead th:nth-child(1){
+        border-radius: 8px 0px 0px 0px;
+        box-shadow: 1px 2px 5px rgba(0,0,0,.31);
+    }
+    
+    table thead th {
+        padding: 10px;
+        background: #080807;
+        color: #E84C3D;
+    }
+
+    table tbody {
+        font-size: .875em;
+    }
+      
+    table tbody tr {
+        border: none;
+        display: table-row;
+    }
+
+    table tbody tr td {
+        display: table-cell;
+        font-weight: 400;
+        padding: 10px;
+        text-align: left;
+    }
+
+    .tables{
         display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        justify-content: space-between;
-        border: 0px;
-        padding-left: 10px;
-        padding-right: 10px;   
     }
+    
+    table tbody tr td:nth-child(1){
+        text-align: left;
+        background-color: #080807;
+        border-radius: initial;
+        box-shadow: initial; 
+        color: #E84C3D;
+        font-weight: bold;
+    }
+
+    table tbody tr td:before {
+        display: none;
+    }
+
     /* Numbers */
 
     /* DIV PIC */
@@ -954,9 +1004,3 @@ footer .second-content{
 /* Media Query of 858px */
 
 
-/* Media Query of 858px */
-@media screen and (min-width: 858px)
-{
-
-}
-/* Media Query of 858px */

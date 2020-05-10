@@ -31,6 +31,7 @@
 
 		<!-- Stylesheet this page -->
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+		<link rel="stylesheet" href="../Yetu/fontawesome-free-5.13.0-web/css/all.css">
 		<!-- Stylesheet this page -->
 
 		<title>COVID-19 | ANGOLA</title>
@@ -152,7 +153,7 @@
 					</div>
 				</div>
 				<div class="tables">
-					<table class="table continentes">
+					<table>
 						<caption>Estado do Covid-19 nos Continentes</caption>
 						<thead>
 							<tr>
@@ -165,46 +166,46 @@
 						</thead>
 						<tbody>
 							<tr>
-								<td class="two-objects"></i><span>África</span></td>
-								<td><?php echo $casesAfrica; ?></td>
-								<td><?php echo $recoveredAfrica; ?></td>
-								<td><?php echo $deathsAfrica; ?></td>
-								<td><?php echo $activeCasesAfrica; ?></td> 
+								<td><span>África</span></td>
+								<td data-label="Casos"><?php echo $casesAfrica; ?></td>
+								<td data-label="Recuperados"><?php echo $recoveredAfrica; ?></td>
+								<td data-label="Óbitos"><?php echo $deathsAfrica; ?></td>
+								<td data-label="Ativos"><?php echo $activeCasesAfrica; ?></td> 
 							</tr>
 							<tr>
-								<td class="two-objects"><span>América do Norte</span></td>
-								<td><?php echo $casesNorthAmerica; ?></td>
-								<td><?php echo $recoveredNorthAmerica; ?></td>
-								<td><?php echo $deathsNorthAmerica; ?></td>
-								<td><?php echo $activeCasesNorthAmerica; ?></td> 
+								<td><span>América do Norte</span></td>
+								<td data-label="Casos"><?php echo $casesNorthAmerica; ?></td>
+								<td data-label="Recuperados"><?php echo $recoveredNorthAmerica; ?></td>
+								<td data-label="Óbitos"><?php echo $deathsNorthAmerica; ?></td>
+								<td data-label="Ativos"><?php echo $activeCasesNorthAmerica; ?></td> 
 							</tr>
 							<tr>
-								<td class="two-objects"><span>América do Sul</span></td>
-								<td><?php echo $casesSouthAmerica; ?></td>
-								<td><?php echo $recoveredSouthAmerica; ?></td>
-								<td><?php echo $deathsSouthAmerica; ?></td>
-								<td><?php echo $activeCasesSouthAmerica; ?></td> 
+								<td><span>América do Sul</span></td>
+								<td data-label="Casos"><?php echo $casesSouthAmerica; ?></td>
+								<td data-label="Recuperados"><?php echo $recoveredSouthAmerica; ?></td>
+								<td data-label="Óbitos"><?php echo $deathsSouthAmerica; ?></td>
+								<td data-label="Ativos"><?php echo $activeCasesSouthAmerica; ?></td> 
 							</tr>
 							<tr>
-								<td class="two-objects"></i><span>Ásia</span></td>
-								<td><?php echo $casesAsia; ?></td>
-								<td><?php echo $recoveredAsia; ?></td>
-								<td><?php echo $deathsAsia; ?></td>
-								<td><?php echo $activeCasesAsia; ?></td> 
+								<td><span>Ásia</span></td>
+								<td data-label="Casos"><?php echo $casesAsia; ?></td>
+								<td data-label="Recuperados"><?php echo $recoveredAsia; ?></td>
+								<td data-label="Óbitos"><?php echo $deathsAsia; ?></td>
+								<td data-label="Ativos"><?php echo $activeCasesAsia; ?></td> 
 							</tr>
 							<tr>
-								<td class="two-objects"><span>Europa</span></td>
-								<td><?php echo $casesEurope; ?></td>
-								<td><?php echo $recoveredEurope; ?></td>
-								<td><?php echo $deathsEurope; ?></td>
-								<td><?php echo $activeCasesEurope; ?></td> 
+								<td><span>Europa</span></td>
+								<td data-label="Casos"><?php echo $casesEurope; ?></td>
+								<td data-label="Recuperados"><?php echo $recoveredEurope; ?></td>
+								<td data-label="Óbitos"><?php echo $deathsEurope; ?></td>
+								<td data-label="Ativos"><?php echo $activeCasesEurope; ?></td> 
 							</tr>
 							<tr>
-								<td class="two-objects"><span>Oceania</span></td>
-								<td><?php echo $casesOceania; ?></td>
-								<td><?php echo $recoveredOceania; ?></td>
-								<td><?php echo $deathsOceania; ?></td>
-								<td><?php echo $activeCasesOceania; ?></td> 
+								<td><span>Oceania</span></td>
+								<td data-label="Casos"><?php echo $casesOceania; ?></td>
+								<td data-label="Recuperados"><?php echo $recoveredOceania; ?></td>
+								<td data-label="Óbitos"><?php echo $deathsOceania; ?></td>
+								<td data-label="Ativos"><?php echo $activeCasesOceania; ?></td> 
 							</tr>
 						</tbody>
 					</table>
