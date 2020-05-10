@@ -21,13 +21,16 @@
 		<link rel="shortcut icon" href="galeira/imagens/icons8_Angola.ico" type="image/x-icon">
 		<!-- shortcut icon -->
 
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+		<!-- jQuery -->
+
 		<!-- Stylesheet this page -->
 		<link rel="stylesheet" href="css/style.css"> 
 		<!-- Stylesheet this page -->
 
 		<!-- Stylesheet this page -->
-		<link rel="stylesheet" href="../Yetu/fontawesome-free-5.13.0-web/css/all.css"> 
-		<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"> -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
 		<!-- Stylesheet this page -->
 
 		<title>COVID-19 | ANGOLA</title>
@@ -111,6 +114,9 @@
 				</div>
 				<p class="source">Fonte: <a href="https://www.worldometers.info/coronavirus/">Worldometers</a></p>
 			</div>
+			<a id="uptop">
+				<i class="fas fa-arrow-circle-up"></i>
+			</a>
 		</section>
 		<!-- Hero -->
 

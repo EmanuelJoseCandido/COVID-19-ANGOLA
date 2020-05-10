@@ -105,3 +105,42 @@ close.addEventListener('click', () => {
     navLinks.classList.remove("open");
 }); 
 /* Header:nav-links */
+
+/* Go to top */
+jQuery(document).ready(function(){
+jQuery("#uptop").hide();
+
+jQuery('a#uptop').click(function () {
+        jQuery('body,html').animate({
+        scrollTop: 0
+        }, 800);
+        return false;
+});
+
+jQuery(window).scroll(function () {
+        if (jQuery(this).scrollTop() > 400) {
+            jQuery('#uptop').fadeIn();
+        } else {
+            jQuery('#uptop').fadeOut();
+        }
+    });
+});
+/* Go to top */
+
+
+/* Links */
+$(function() {
+    $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+        if (target.length) {
+            $('html,body').animate({
+            scrollTop: target.offset().top
+            }, 1000);
+            return false;
+        }
+        }
+    });
+});
+/* Links */

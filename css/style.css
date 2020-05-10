@@ -553,47 +553,7 @@ tbody{
 
 /* Covid-19 */
 
-
-/* Team */
-
-#team .team-content{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 20px;
-    background: #111110;
-    color: #F1C40F;
-    border-radius: 8px/7px;
-    box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
-    padding: 0px;
-    transition: all 650ms ease-in-out;
-}
-
-#team .team-content .pic img{
-    height: 250px;
-    width: 250px;
-    border-radius: 8px 8px 0px 0px;
-} 
-
-.team-content .description{
-    margin-top: 25px;
-}
-
-.team-content .social{
-    width: 100%;
-    margin-top: 25px;
-    bottom: -100px;
-    background: #E84C3D;
-    border-radius: 0px 0px 8px 8px;
-    transition: all 650ms ease-in-out;
-}
-
-#team .team-content:hover .social{
-    bottom: 0;
-}
-
+/* Social */
 .social li{
     display: inline-block;
 }
@@ -625,7 +585,7 @@ tbody{
 .social .fa-linkedin:hover{
     color: #0073B2;
 }
-/* Team */
+/* Social */
 
 
 
@@ -828,6 +788,29 @@ footer .second-content{
         font-size: 25pt;
     }
     /* Hero */
+
+    /* div uptop */
+
+    #uptop{
+        
+        position: absolute;
+    }
+
+    #uptop i{
+       margin-left: 1250px;
+       color: #E84C3D;
+       opacity: .8;
+       font-size: 45pt;
+       margin-top: 450px;
+       position: fixed;
+       cursor: pointer;
+    }
+
+    #uptop i:hover{
+        opacity: 1;
+    }
+
+    /* div uptop */
 
     /* Numbers */
     #numbers{

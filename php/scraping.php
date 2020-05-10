@@ -34,16 +34,9 @@ for ($i=0; $i < 13; $i++) {
     $updateDate[$i] = ' ';
 }
 
-for ($i=33; $i < 37; $i++) { 
+for ($i=26; $i < 37; $i++) { 
     $updateDate[$i] = ' ';
 }
-
-$dataAlterada = $updateDate[28].$updateDate[29]; 
-$dataAlterada++;
-$dataAlterada .= "";
-$updateDate[28] = $dataAlterada[0];
-$updateDate[29] = $dataAlterada[1];
-
 
 /* North America */
 $casesNorthAmerica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(1)->nodeValue );
