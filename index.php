@@ -492,7 +492,7 @@
 				<h3>Links</h3>
 				<ul class="links">
 					<li>João Sessa<a href="https://­angocovid19.000webhos­tapp.com/">(link)</a></li>
-					<li>Funete Xindome<a href="#">(link)</a></li>
+					<li>Funete Xindome<a href="https://­covid-19angola.000web­hostapp.com/">(link)</a></li>
 					<li><a href="https://www.covid19.gov.ao/">Comissão Interministerial de Angola</a></li>
 					<li><a href="https://www.who.int/">Organização Mundial da Saúde</a></li>
 					<li><a href="https://www.worldometers.info/coronavirus/">Worldometers</a></li>
