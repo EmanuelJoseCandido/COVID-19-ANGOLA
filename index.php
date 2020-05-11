@@ -48,7 +48,7 @@
 					</span> 
 				</span> 
 				<span class="barra">
-					<span class="yellow">|</span>
+					<span class="yellow">&nbsp;|&nbsp;</span>
 				</span>
 				<span class="angola">
 					<span class="black">An</span><span class="yellow">go</span><span class="red">la</span>
@@ -130,7 +130,7 @@
 			
 			<div class="info">
 				<div class="info-covid">
-					<p class="update">Última actualização: <?php echo $updateDate; ?></p>
+					<p class="update">Última actualização: <span><?php echo $updateDate; ?></span></p>
 					<h2>Estado do Covid-19 no Mundo</h2>
 					<div class="numbers-covid">
 						<div class="cases">
@@ -170,42 +170,42 @@
 							<tr>
 								<td><span>África</span></td>
 								<td data-label="Casos"><?php echo $casesAfrica; ?></td>
-								<td data-label="Recuperados"><?php echo $recoveredAfrica; ?></td>
+								<td data-label="Recup."><?php echo $recoveredAfrica; ?></td>
 								<td data-label="Óbitos"><?php echo $deathsAfrica; ?></td>
 								<td data-label="Ativos"><?php echo $activeCasesAfrica; ?></td> 
 							</tr>
 							<tr>
 								<td><span>América do Norte</span></td>
 								<td data-label="Casos"><?php echo $casesNorthAmerica; ?></td>
-								<td data-label="Recuperados"><?php echo $recoveredNorthAmerica; ?></td>
+								<td data-label="Recup."><?php echo $recoveredNorthAmerica; ?></td>
 								<td data-label="Óbitos"><?php echo $deathsNorthAmerica; ?></td>
 								<td data-label="Ativos"><?php echo $activeCasesNorthAmerica; ?></td> 
 							</tr>
 							<tr>
 								<td><span>América do Sul</span></td>
 								<td data-label="Casos"><?php echo $casesSouthAmerica; ?></td>
-								<td data-label="Recuperados"><?php echo $recoveredSouthAmerica; ?></td>
+								<td data-label="Recup."><?php echo $recoveredSouthAmerica; ?></td>
 								<td data-label="Óbitos"><?php echo $deathsSouthAmerica; ?></td>
 								<td data-label="Ativos"><?php echo $activeCasesSouthAmerica; ?></td> 
 							</tr>
 							<tr>
 								<td><span>Ásia</span></td>
 								<td data-label="Casos"><?php echo $casesAsia; ?></td>
-								<td data-label="Recuperados"><?php echo $recoveredAsia; ?></td>
+								<td data-label="Recup."><?php echo $recoveredAsia; ?></td>
 								<td data-label="Óbitos"><?php echo $deathsAsia; ?></td>
 								<td data-label="Ativos"><?php echo $activeCasesAsia; ?></td> 
 							</tr>
 							<tr>
 								<td><span>Europa</span></td>
 								<td data-label="Casos"><?php echo $casesEurope; ?></td>
-								<td data-label="Recuperados"><?php echo $recoveredEurope; ?></td>
+								<td data-label="Recup."><?php echo $recoveredEurope; ?></td>
 								<td data-label="Óbitos"><?php echo $deathsEurope; ?></td>
 								<td data-label="Ativos"><?php echo $activeCasesEurope; ?></td> 
 							</tr>
 							<tr>
 								<td><span>Oceania</span></td>
 								<td data-label="Casos"><?php echo $casesOceania; ?></td>
-								<td data-label="Recuperados"><?php echo $recoveredOceania; ?></td>
+								<td data-label="Recup."><?php echo $recoveredOceania; ?></td>
 								<td data-label="Óbitos"><?php echo $deathsOceania; ?></td>
 								<td data-label="Ativos"><?php echo $activeCasesOceania; ?></td> 
 							</tr>
@@ -234,7 +234,10 @@
 				<div class="about-covid-19">
 					<div class="item-covid-19">
 						<i class="fas fa-virus"></i>
-						<h2>O que é Covid-19?</h2>
+						<h2>O que é Covid-19?</h2>						
+					</div>
+
+					<div class="texts">
 						<div class="modal-covid-19">
 							<span class="close">&times;</span>
 							<div class="description-covid-19">
@@ -260,11 +263,7 @@
 								</span>
 							</div>
 						</div>
-					</div>
 
-					<div class="item-covid-19">
-						<i class="fas fa-head-side-cough">­</i>
-						<h2>Quais são os sintomas?</h2>
 						<div class="modal-covid-19">
 							<span class="close">&times;</span>
 							<div class="description-covid-19">
@@ -284,11 +283,7 @@
 								</span>
 							</div>
 						</div>
-					</div>
 
-					<div class="item-covid-19">
-						<i class="fas fa-people-arrows"></i>
-						<h2>Como é transmitido?</h2>
 						<div class="modal-covid-19">
 							<span class="close">&times;</span>
 							<div class="description-covid-19">
@@ -309,11 +304,7 @@
 								</span>
 							</div>
 						</div>
-					</div>
 
-					<div class="item-covid-19">
-						<i class="fas fa-user-md"></i>
-						<h2>Diagnóstico?</h2>
 						<div class="modal-covid-19">
 							<span class="close">&times;</span>
 							<div class="description-covid-19">
@@ -350,11 +341,7 @@
 								</span>
 							</div>
 						</div>
-					</div>
-
-					<div class="item-covid-19">
-						<i class="fas fa-head-side-mask"></i>
-						<h2>Como se proteger?</h2>
+				
 						<div class="modal-covid-19">
 							<span class="close">&times;</span>
 							<div class="description-covid-19">
@@ -408,11 +395,7 @@
 								</span>
 							</div>
 						</div>
-					</div>
 
-					<div class="item-covid-19">
-						<i class="fas fa-procedures"></i>
-						<h2>Se eu ficar doente?</h2>
 						<div class="modal-covid-19">
 							<span class="close">&times;</span>
 							<div class="description-covid-19">
@@ -439,6 +422,31 @@
 								</span>
 							</div>
 						</div>
+					</div>
+					
+					<div class="item-covid-19">
+						<i class="fas fa-head-side-cough">­</i>
+						<h2>Quais são os sintomas?</h2>
+					</div>
+
+					<div class="item-covid-19">
+						<i class="fas fa-people-arrows"></i>
+						<h2>Como é transmitido?</h2>
+					</div>
+
+					<div class="item-covid-19">
+						<i class="fas fa-user-md"></i>
+						<h2>Diagnóstico?</h2>
+					</div>
+
+					<div class="item-covid-19">
+						<i class="fas fa-head-side-mask"></i>
+						<h2>Como se proteger?</h2>
+					</div>
+
+					<div class="item-covid-19">
+						<i class="fas fa-procedures"></i>
+						<h2>Se eu ficar doente?</h2>
 					</div>	
 				</div>
 		</section>

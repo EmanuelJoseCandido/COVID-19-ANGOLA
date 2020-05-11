@@ -18,12 +18,12 @@ var item6 = document.getElementsByClassName("item-covid-19")[5];
 
 
 // Get the <span> element that closes the modal
-var span1 = document.getElementsByClassName("close")[0];
-var span2 = document.getElementsByClassName("close")[1];
-var span3 = document.getElementsByClassName("close")[2];
-var span4 = document.getElementsByClassName("close")[3];
-var span5 = document.getElementsByClassName("close")[4];
-var span6 = document.getElementsByClassName("close")[5];
+var span1 = document.getElementsByClassName("close")[1];
+var span2 = document.getElementsByClassName("close")[2];
+var span3 = document.getElementsByClassName("close")[3];
+var span4 = document.getElementsByClassName("close")[4];
+var span5 = document.getElementsByClassName("close")[5];
+var span6 = document.getElementsByClassName("close")[6];
 
 
 // When the user clicks the button, open the modal 
@@ -54,7 +54,7 @@ item6.onclick = function() {
 
 // When the user clicks on <span> (x), close the modal
 span1.onclick = function() {
-    modal1.style.display = "none";
+   modal1.style.display = 'none';
 }
 
 span2.onclick = function() {
@@ -91,6 +91,8 @@ window.onclick = function(event) {
     }
 }
 /* Modal */
+
+
 
 /* Header:nav-links */
 const open = document.querySelector('.menu-icons.open');

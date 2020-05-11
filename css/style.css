@@ -51,6 +51,7 @@ span.black, header span.yellow, header span.red{
 
 .covid span.black{
     color: #080807;
+    text-shadow: 2px 2px 2px #fefefe;
 }
 
 .barra span.yellow{
@@ -291,6 +292,10 @@ header .nav-links .footer-nav .social li a:hover{
     margin: 5px;
 }
 
+#numbers .info-covid .numbers-covid .info-number, #numbers .info-covid .update span{
+    color: #e1e3e4;
+}
+
 .pc{
     display: none;
 }
@@ -448,7 +453,7 @@ table {
     margin: 10px;
     height: 200px;
     width: 200px;
-    background: #edf0f1;
+    background: white;
     border-radius: 8px/7px;
     box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
     cursor: pointer;
@@ -531,11 +536,9 @@ table {
 
 .modal-covid-19 .close {
     position: relative;
-    z-index: 1500;
-    color: #080807;
-    float: right;
-    margin-right: 350px;
-    font-size: 50px;
+    color: #E84C3D;
+    float: center;
+    font-size: 70px;
     font-weight: bold;
     transition: all 650ms ease-in-out;
 }
@@ -712,6 +715,8 @@ footer .second-content:hover{
         font-weight: bolder;
         font-size: 18pt;
         cursor: pointer;
+        display: flex;
+        flex-wrap: nowrap;
     }
 
     header .menu-icons.open{
@@ -722,29 +727,14 @@ footer .second-content:hover{
         display: none;
     }
 
+    header .nav-links .menu{ 
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
     header .nav-links li{
         display: inline-block;
         padding:  18px 15px;
-    }
-
-    header .sub-menu li{
-        transition: all .3s ease-in-out;
-        border-top: 1px solid #edf0f1;
-        padding: 1rem 2rem;
-    }
-
-    header .sub-menu{
-        position: absolute;
-        margin-top: 18px;
-        display: none;
-        flex-direction: column;
-        background: #181817;
-        box-shadow: 1px 2px 5px rgba(0,0,0,.31); 
-        transition: all .3s ease-in-out;
-    }
-
-    header ul li:hover ul{
-        display: flex;
     }
 
     header .nav-links li{
@@ -975,7 +965,7 @@ footer .second-content:hover{
         margin: 20px 20px 20px 20px;
         height: 230px;
         width: 230px;
-        background: #edf0f1;
+        padding: 20px;
     }
 
     /* Modal */
