@@ -10,11 +10,13 @@ $DOMDocument = new DOMDocument( '1.0', 'utf-8' );
 $DOMDocument->preserveWhiteSpace = false;
 @$DOMDocument->loadHTML( file_get_contents( $WebSiteAngola) );
 
-$updateDate = utf8_decode( $DOMDocument->getElementsByTagName( 'div' )->item(12)->nodeValue );
+$updateDate = manipulateData(utf8_decode( $DOMDocument->getElementsByTagName( 'div' )->item(12)->nodeValue ));
 $casesAngola = utf8_decode( $DOMDocument->getElementsByTagName( 'span' )->item(4)->nodeValue );
 $deathsAngola = utf8_decode( $DOMDocument->getElementsByTagName( 'span' )->item(5)->nodeValue );
 $recoveredAngola = utf8_decode( $DOMDocument->getElementsByTagName( 'span' )->item(6)->nodeValue ); 
-$activeCasesAngola = (float) $casesAngola - ((float) $deathsAngola + (float) $recoveredAngola);
+$activeCasesAngola = numberFormat($casesAngola) - (numberFormat($deathsAngola) + numberFormat($recoveredAngola));
+$activeCasesAngola = number_format($activeCasesAngola,0,",",",");
+
 /* Angola */
 
 
@@ -29,14 +31,6 @@ $deathsWorld = utf8_decode( $DOMDocument->getElementsByTagName( 'span' )->item(5
 $recoveredWorld = utf8_decode( $DOMDocument->getElementsByTagName( 'span' )->item(6)->nodeValue ); 
 $activeCasesWorld = utf8_decode( $DOMDocument->getElementsByTagName( 'div' )->item(29)->nodeValue );
 
-
-for ($i=0; $i < 13; $i++) { 
-    $updateDate[$i] = ' ';
-}
-
-for ($i=26; $i < 37; $i++) { 
-    $updateDate[$i] = ' ';
-}
 
 /* North America */
 $casesNorthAmerica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(1)->nodeValue );
@@ -67,7 +61,7 @@ $casesSouthAmerica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->it
 $deathsSouthAmerica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(29)->nodeValue );
 $recoveredSouthAmerica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(31)->nodeValue ); 
 $activeCasesSouthAmerica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(32)->nodeValue );
-/* SouthAmerica */
+/* South America */
 
 
 /* Africa */
@@ -86,3 +80,50 @@ $activeCasesOceania = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->i
 /* Oceania */
 
 /* World */
+
+
+/* Function for manipulate date */
+function manipulateData($update)
+{
+    $minutes = $hours = $day = $month = $year = "";
+   
+    for ($i=0; $i < strlen($update); $i++) { 
+      if ($i > 13 && $i < 17) {$month .= $update[$i];}
+      elseif ($i > 17 && $i < 20) {$day .= $update[$i];}
+      elseif ($i > 21 && $i < 26) {$year .= $update[$i];}
+      elseif ($i > 27 && $i < 30) {$hours .= $update[$i];}
+      elseif ($i > 30 && $i < 33) {$minutes .= $update[$i];}
+    }
+
+    switch ($month) {
+      case 'Jan': $month = "Janeiro"; break;
+      case 'Feb': $month = "Fevereiro"; break;
+      case 'Mar': $month = "Março"; break;
+      case 'Apr': $month = "Abril"; break;
+      case 'May': $month = "Maio"; break;
+      case 'Jun': $month = "Junho"; break;
+      case 'Jul': $month = "Julho"; break;
+      case 'Aug': $month = "Agosto"; break;
+      case 'Sep': $month = "Setembro"; break;
+      case 'Oct': $month = "Outubro"; break;
+      case 'Nov': $month = "Novembro"; break;
+      case 'Dec': $month = "Dezembro"; break;
+      default: $month = ""; break;
+    }
+
+    $hours++;
+    if($hours == 24){ $hours = "00";}
+
+    $update = "$day de $month de $year | $hours:$minutes";
+
+    return $update;
+}
+/* Function for manipulate date */
+
+
+/* Function for Format Number */
+function numberFormat($numero)
+{
+   return str_replace(['.',','],'', $numero);
+}
+/* Function for Format Number */
