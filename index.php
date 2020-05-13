@@ -175,18 +175,11 @@
 								<td data-label="Ativos"><?php echo $activeCasesAfrica; ?></td> 
 							</tr>
 							<tr>
-								<td><span>América do Norte</span></td>
-								<td data-label="Casos"><?php echo $casesNorthAmerica; ?></td>
-								<td data-label="Recup."><?php echo $recoveredNorthAmerica; ?></td>
-								<td data-label="Óbitos"><?php echo $deathsNorthAmerica; ?></td>
-								<td data-label="Ativos"><?php echo $activeCasesNorthAmerica; ?></td> 
-							</tr>
-							<tr>
-								<td><span>América do Sul</span></td>
-								<td data-label="Casos"><?php echo $casesSouthAmerica; ?></td>
-								<td data-label="Recup."><?php echo $recoveredSouthAmerica; ?></td>
-								<td data-label="Óbitos"><?php echo $deathsSouthAmerica; ?></td>
-								<td data-label="Ativos"><?php echo $activeCasesSouthAmerica; ?></td> 
+								<td><span>América</span></td>
+								<td data-label="Casos"><?php echo $casesAmerica; ?></td>
+								<td data-label="Recup."><?php echo $recoveredAmerica; ?></td>
+								<td data-label="Óbitos"><?php echo $deathsAmerica; ?></td>
+								<td data-label="Ativos"><?php echo $activeCasesAmerica; ?></td> 
 							</tr>
 							<tr>
 								<td><span>Ásia</span></td>

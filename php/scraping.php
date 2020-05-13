@@ -33,10 +33,10 @@ $activeCasesWorld = utf8_decode( $DOMDocument->getElementsByTagName( 'div' )->it
 
 
 /* North America */
-$casesNorthAmerica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(1)->nodeValue );
-$deathsNorthAmerica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(3)->nodeValue );
-$activeCasesNorthAmerica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(6)->nodeValue );
-$recoveredNorthAmerica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(5)->nodeValue ); 
+$casesNorthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(1)->nodeValue ));
+$deathsNorthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(3)->nodeValue ));
+$activeCasesNorthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(6)->nodeValue ));
+$recoveredNorthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(5)->nodeValue )); 
 /* North America */
 
 
@@ -57,10 +57,10 @@ $activeCasesAsia = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item
 
 
 /* South America */
-$casesSouthAmerica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(27)->nodeValue );
-$deathsSouthAmerica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(29)->nodeValue );
-$recoveredSouthAmerica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(31)->nodeValue ); 
-$activeCasesSouthAmerica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(32)->nodeValue );
+$casesSouthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(27)->nodeValue ));
+$deathsSouthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(29)->nodeValue ));
+$recoveredSouthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(31)->nodeValue )); 
+$activeCasesSouthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(32)->nodeValue ));
 /* South America */
 
 
@@ -78,6 +78,15 @@ $deathsOceania = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(6
 $recoveredOceania = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(70)->nodeValue ); 
 $activeCasesOceania = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(71)->nodeValue );
 /* Oceania */
+
+
+/* America */
+$casesAmerica = number_format(($casesNorthAmerica + $casesSouthAmerica),0,",",",");
+$deathsAmerica = number_format(($deathsNorthAmerica+ $deathsSouthAmerica),0,",",",");
+$recoveredAmerica = number_format(($recoveredNorthAmerica + $recoveredSouthAmerica),0,",",",");
+$activeCasesAmerica = number_format(($activeCasesNorthAmerica + $activeCasesSouthAmerica),0,",",",");
+/* America */
+
 
 /* World */
 
