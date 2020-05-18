@@ -4,6 +4,6 @@
 
 Um app para colecta de dados sobre o COVID-19 em Angola.
 
-Visite: https://appcovidangola.000webhostapp.com/ 
+Visite: https://covidangola.herokuapp.com/
 
 <b>Programar é engraçado 😉💻.<b>
