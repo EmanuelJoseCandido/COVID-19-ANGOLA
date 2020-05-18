@@ -29,7 +29,7 @@ $DOMDocument->preserveWhiteSpace = false;
 $casesWorld = utf8_decode( $DOMDocument->getElementsByTagName( 'span' )->item(4)->nodeValue );
 $deathsWorld = utf8_decode( $DOMDocument->getElementsByTagName( 'span' )->item(5)->nodeValue );
 $recoveredWorld = utf8_decode( $DOMDocument->getElementsByTagName( 'span' )->item(6)->nodeValue ); 
-$activeCasesWorld = utf8_decode( $DOMDocument->getElementsByTagName( 'div' )->item(29)->nodeValue );
+$activeCasesWorld = utf8_decode( $DOMDocument->getElementsByTagName( 'div' )->item(28)->nodeValue );
 
 
 /* North America */
