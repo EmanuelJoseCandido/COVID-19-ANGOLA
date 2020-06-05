@@ -36,47 +36,47 @@ $activeCasesWorld = utf8_decode( $DOMDocument->getElementsByTagName( 'div' )->it
 $casesNorthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(2)->nodeValue ));
 $deathsNorthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(4)->nodeValue ));
 $recoveredNorthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(6)->nodeValue ));
-$activeCasesNorthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(7)->nodeValue )); 
+$activeCasesNorthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(8)->nodeValue )); 
 /* North America */
 
 
 /* Europe */
-$casesEurope = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(17)->nodeValue );
-$deathsEurope = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(19)->nodeValue );
-$recoveredEurope = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(21)->nodeValue ); 
-$activeCasesEurope = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(22)->nodeValue );
+$casesEurope = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(40)->nodeValue );
+$deathsEurope = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(42)->nodeValue );
+$recoveredEurope = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(44)->nodeValue ); 
+$activeCasesEurope = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(46)->nodeValue );
 /* Europe */
 
 
 /* Asia */
-$casesAsia = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(47)->nodeValue );
-$deathsAsia = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(49)->nodeValue );
-$recoveredAsia = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(51)->nodeValue ); 
-$activeCasesAsia = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(52)->nodeValue );
+$casesAsia = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(59)->nodeValue );
+$deathsAsia = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(61)->nodeValue );
+$recoveredAsia = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(63)->nodeValue ); 
+$activeCasesAsia = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(65)->nodeValue );
 /* Asia */
 
 
 /* South America */
-$casesSouthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(32)->nodeValue ));
-$deathsSouthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(34)->nodeValue ));
-$recoveredSouthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(36)->nodeValue )); 
-$activeCasesSouthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(37)->nodeValue ));
+$casesSouthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(21)->nodeValue ));
+$deathsSouthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(23)->nodeValue ));
+$recoveredSouthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(25)->nodeValue )); 
+$activeCasesSouthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(27)->nodeValue ));
 /* South America */
 
 
 /* Africa */
-$casesAfrica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(62)->nodeValue );
-$deathsAfrica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(64)->nodeValue );
-$recoveredAfrica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(66)->nodeValue ); 
-$activeCasesAfrica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(67)->nodeValue );
+$casesAfrica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(78)->nodeValue );
+$deathsAfrica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(80)->nodeValue );
+$recoveredAfrica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(82)->nodeValue ); 
+$activeCasesAfrica = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(84)->nodeValue );
 /* Africa */
 
 
 /* Oceania */
-$casesOceania = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(77)->nodeValue );
-$deathsOceania = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(79)->nodeValue );
-$recoveredOceania = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(81)->nodeValue ); 
-$activeCasesOceania = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(82)->nodeValue );
+$casesOceania = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(97)->nodeValue );
+$deathsOceania = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(99)->nodeValue );
+$recoveredOceania = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(101)->nodeValue ); 
+$activeCasesOceania = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(103)->nodeValue );
 /* Oceania */
 
 
@@ -98,10 +98,10 @@ function manipulateData($update)
    
     for ($i=0; $i < strlen($update); $i++) { 
       if ($i > 13 && $i < 17) {$month .= $update[$i];}
-      elseif ($i > 17 && $i < 20) {$day .= $update[$i];}
-      elseif ($i > 21 && $i < 26) {$year .= $update[$i];}
-      elseif ($i > 27 && $i < 30) {$hours .= $update[$i];}
-      elseif ($i > 30 && $i < 33) {$minutes .= $update[$i];}
+      elseif ($i > 18 && $i < 21) {$day .= $update[$i];}
+      elseif ($i > 22 && $i < 27) {$year .= $update[$i];}
+      elseif ($i > 27 && $i < 31) {$hours .= $update[$i];}
+      elseif ($i > 31 && $i < 34) {$minutes .= $update[$i];}
     }
 
     switch ($month) {
