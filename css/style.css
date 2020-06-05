@@ -40,11 +40,6 @@ div.logo{
     font-size: 14pt;
 }
 
-.menu-icons.open{
-    color: #F1C40F;
-    margin-right: 30px;
-}
-
 span.black, header span.yellow, header span.red{
     transition: all 650ms ease-in-out;
 }
@@ -75,12 +70,22 @@ div.logo:hover span.red{
 }
 
 .menu-icons{
-    font-size: 30pt;
     cursor: pointer;
+    padding: 5px 12px 5px 12px;
+    text-align: center;
+    font-size: 20pt;
+    border-radius: 7px;
+}
+
+.menu-icons.open{
+    margin-right: 30px;
+    background: #F1C40F;
+    box-shadow: 1px 2px 5px rgb(241, 196, 15, .31); 
 }
 
 .menu-icons.close{
     color: #E84C3D;
+    font-size: 30pt;
 }
 
 .menu-icons.close i{
