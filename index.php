@@ -19,7 +19,7 @@
 		<meta name="description" content="COVID-19-ANGOLA é aplicativo de página única que  mostra o estado do COVID-19 em Angola e nos continentes em tempo real.">
 		<meta name="keywords" content="Covid-19, Corona vírus, Angola, Tempo real">
 		<meta name="theme-color" content="#171716">
-		<meta property="og:image" content="galeira/imagens/8.png">
+		<meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/8/82/SARS-CoV-2_without_background.png">
 
 		<!-- Shortcut icon -->
 		<link rel="shortcut icon" href="galeira/imagens/icons8_Angola.ico" type="image/x-icon">
