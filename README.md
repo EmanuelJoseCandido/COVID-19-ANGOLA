@@ -1,9 +1,6 @@
 # COVID-19 | ANGOLA
 
-<img src="galeira/imagens/covid19page.gif">
+<img src="galeira/imagens/covid19page.png">
 
-Um app para colecta de dados sobre o COVID-19 em Angola.
+<p align="justify">COVID-19-ANGOLA é aplicativo de página única que  mostra o estado do COVID-19 em Angola e nos continentes em tempo real.</p>
 
-Visite: https://covidangola.herokuapp.com/
-
-<b>Programar é engraçado 😉💻.<b>
