@@ -41,10 +41,10 @@ $activeCasesNorthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsBy
 
 
 /* Europe */
-$casesEurope = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(40)->nodeValue );
-$deathsEurope = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(42)->nodeValue );
-$recoveredEurope = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(44)->nodeValue ); 
-$activeCasesEurope = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(46)->nodeValue );
+$casesEurope = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(59)->nodeValue );
+$deathsEurope = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(61)->nodeValue );
+$recoveredEurope = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(63)->nodeValue ); 
+$activeCasesEurope = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(65)->nodeValue );
 /* Europe */
 
 
