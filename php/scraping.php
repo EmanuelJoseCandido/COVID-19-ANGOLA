@@ -94,37 +94,29 @@ $activeCasesAmerica = number_format(($activeCasesNorthAmerica + $activeCasesSout
 /* Function for manipulate date */
 function manipulateData($update)
 {
-    $minutes = $hours = $day = $month = $year = "";
-   
-    for ($i=0; $i < strlen($update); $i++) { 
-      if ($i > 13 && $i < 17) {$month .= $update[$i];}
-      elseif ($i > 18 && $i < 21) {$day .= $update[$i];}
-      elseif ($i > 22 && $i < 27) {$year .= $update[$i];}
-      elseif ($i > 27 && $i < 31) {$hours .= $update[$i];}
-      elseif ($i > 31 && $i < 34) {$minutes .= $update[$i];}
-    }
+    $month = date('m');
+    $day = date('d');
+    $year = date('Y');
 
     switch ($month) {
-      case 'Jan': $month = "Janeiro"; break;
-      case 'Feb': $month = "Fevereiro"; break;
-      case 'Mar': $month = "Março"; break;
-      case 'Apr': $month = "Abril"; break;
-      case 'May': $month = "Maio"; break;
-      case 'Jun': $month = "Junho"; break;
-      case 'Jul': $month = "Julho"; break;
-      case 'Aug': $month = "Agosto"; break;
-      case 'Sep': $month = "Setembro"; break;
-      case 'Oct': $month = "Outubro"; break;
-      case 'Nov': $month = "Novembro"; break;
-      case 'Dec': $month = "Dezembro"; break;
+      case "01": $month = "Janeiro"; break;
+      case "02": $month = "Fevereiro"; break;
+      case "03": $month = "Março"; break;
+      case "04": $month = "Abril"; break;
+      case "05": $month = "Maio"; break;
+      case "06": $month = "Junho"; break;
+      case "07": $month = "Julho"; break;
+      case "08": $month = "Agosto"; break;
+      case "09": $month = "Setembro"; break;
+      case "10": $month = "Outubro"; break;
+      case "11": $month = "Novembro"; break;
+      case "12": $month = "Dezembro"; break;
       default: $month = ""; break;
     }
 
-    $hours++;
-    if($hours == 24){ $hours = "00";}
+    $hours = substr($update, -9 ,strlen($update) - 3);
 
-    $update = "$day de $month de $year | $hours:$minutes";
-
+    $update = "$day de $month de $year | $hours";
     return $update;
 }
 /* Function for manipulate date */
