@@ -57,10 +57,10 @@ $activeCasesAsia = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item
 
 
 /* South America */
-$casesSouthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(21)->nodeValue ));
-$deathsSouthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(23)->nodeValue ));
-$recoveredSouthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(25)->nodeValue )); 
-$activeCasesSouthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(27)->nodeValue ));
+$casesSouthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(40)->nodeValue ));
+$deathsSouthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(42)->nodeValue ));
+$recoveredSouthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(44)->nodeValue )); 
+$activeCasesSouthAmerica = numberFormat(utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(46)->nodeValue ));
 /* South America */
 
 
