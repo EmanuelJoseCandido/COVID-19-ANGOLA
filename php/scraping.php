@@ -49,10 +49,10 @@ $activeCasesEurope = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->it
 
 
 /* Asia */
-$casesAsia = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(59)->nodeValue );
-$deathsAsia = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(61)->nodeValue );
-$recoveredAsia = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(63)->nodeValue ); 
-$activeCasesAsia = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(65)->nodeValue );
+$casesAsia = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(21)->nodeValue );
+$deathsAsia = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(23)->nodeValue );
+$recoveredAsia = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(25)->nodeValue ); 
+$activeCasesAsia = utf8_decode( $DOMDocument->getElementsByTagName( 'td' )->item(27)->nodeValue );
 /* Asia */
 
 
